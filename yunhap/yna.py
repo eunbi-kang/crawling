@@ -1,7 +1,10 @@
 import os
 import time
 import random
+import json
+import pickle
 import pandas as pd
+import re
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
@@ -10,27 +13,43 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 from webdriver_manager.chrome import ChromeDriverManager
+from pymongo import MongoClient
 
-# ✅ 데이터 저장 폴더 설정 (../data)
+# ✅ 데이터 저장 폴더 설정
 DATA_DIR = "../data"
 os.makedirs(DATA_DIR, exist_ok=True)
 
 # ✅ 기존 파일 삭제 함수
 def delete_existing_files():
-    csv_path = os.path.join(DATA_DIR, "latest_news.csv")
-    pkl_path = os.path.join(DATA_DIR, "latest_news.pkl")
+    files_to_delete = ["latest_news.csv", "latest_news.json", "latest_news.pkl"]
+    for file in files_to_delete:
+        file_path = os.path.join(DATA_DIR, file)
+        if os.path.exists(file_path):
+            os.remove(file_path)
+            print(f"🗑 기존 파일 삭제: {file_path}")
 
-    if os.path.exists(csv_path):
-        os.remove(csv_path)
-        print(f"🗑 기존 CSV 파일 삭제: {csv_path}")
+# ✅ 이스케이프 문자 제거 함수
+def clean_text(text):
+    if text:
+        text = text.strip()  # 앞뒤 공백 제거
+        text = re.sub(r"\s*\n\s*", " ", text)  # 줄바꿈을 공백으로 변환 (마침표 추가 X)
+        text = re.sub(r"\s*\t\s*", " ", text)  # 탭(\t)을 공백으로 변환
+        text = re.sub(r"\s+", " ", text)  # 여러 개의 공백을 하나로 변환
 
-    if os.path.exists(pkl_path):
-        os.remove(pkl_path)
-        print(f"🗑 기존 PKL 파일 삭제: {pkl_path}")
+        # 문장이 마침표 없이 끝난 경우에만 마침표 추가
+        if text and not text.endswith((".", "?", "!", "”", "\"")):
+            text += "."
+
+        # 따옴표(")가 중복되지 않도록 정리
+        text = text.replace(" .", ".").replace(" .\"", ".\"")
+
+        return text.strip()
+    return None
+
 
 # ✅ Selenium WebDriver 설정
 chrome_options = Options()
-chrome_options.add_argument("--headless")  # 브라우저 창을 띄우지 않음
+chrome_options.add_argument("--headless")
 chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-gpu")
 chrome_options.add_argument("--window-size=1920x1080")
@@ -42,8 +61,8 @@ browser = webdriver.Chrome(service=service, options=chrome_options)
 
 # ✅ 크롤링할 기본 URL
 base_url = "https://www.yna.co.kr/economy/real-estate/"
-page = 1  # 시작 페이지
-all_news = []  # 전체 뉴스 저장 리스트
+page = 1
+all_news = []
 
 # ✅ 기존 파일 삭제
 delete_existing_files()
@@ -55,10 +74,10 @@ while True:
     wait = WebDriverWait(browser, 15)
 
     # ✅ JavaScript 실행하여 동적 로딩 시도
-    browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")  # 맨 아래로 스크롤
-    time.sleep(random.uniform(5, 8))  # ✅ JavaScript 실행 후 대기
+    browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+    time.sleep(random.uniform(5, 8))
 
-    # ✅ 기사 목록이 있는 `list01`이 로드될 때까지 대기
+    # ✅ 기사 목록 로딩 대기
     try:
         wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="container"]/div[2]/div[2]/div[1]/section/div/ul')))
         print("✅ 뉴스 섹션 감지 완료!")
@@ -66,38 +85,39 @@ while True:
         print("⚠️ 뉴스 섹션을 찾을 수 없습니다. 마지막 페이지일 가능성이 있습니다.")
         break
 
-    # ✅ 뉴스 목록 가져오기 (item-box01 내부의 데이터 크롤링)
+    # ✅ 뉴스 목록 가져오기
     news_section = browser.find_element(By.XPATH, '//*[@id="container"]/div[2]/div[2]/div[1]/section/div/ul')
 
     # 🔥 HTML 구조 확인 (디버깅용)
     html_content = news_section.get_attribute("outerHTML")
-    print("\n🔍 현재 뉴스 섹션 HTML 구조:\n", html_content[:1000])  # ✅ HTML 일부 확인 (1000자 제한)
-
     soup = BeautifulSoup(html_content, "html.parser")
 
     # ✅ 최신 뉴스 크롤링
     news_items = []
-    articles = soup.select("div.item-box01")  # ✅ 뉴스 기사 리스트
+    articles = soup.select("div.item-box01")
 
     if not articles:
         print("⚠️ 'item-box01' 내부에서 기사를 찾지 못했습니다. HTML 구조 변경 가능성 있음.")
 
     for article in articles:
-        title_tag = article.select_one("a.tit-news span.title01")  # ✅ 기사 제목
-        link_tag = article.select_one("a.tit-news")  # ✅ 기사 링크
-        date_tag = article.select_one("span.txt-time")  # ✅ 날짜
-        summary_tag = article.select_one("p.lead")  # ✅ 요약
+        title_tag = article.select_one("a.tit-news span.title01")
+        link_tag = article.select_one("a.tit-news")
+        date_tag = article.select_one("span.txt-time")
+        summary_tag = article.select_one("p.lead")
+        image_tag = article.select_one("figure.img-con01 img")
 
-        title = title_tag.get_text(strip=True) if title_tag else "제목 없음"
-        link = link_tag["href"] if link_tag and "href" in link_tag.attrs else "링크 없음"
-        date = date_tag.get_text(strip=True) if date_tag else "날짜 없음"
-        summary = summary_tag.get_text(strip=True) if summary_tag else "요약 없음"
+        title = clean_text(title_tag.get_text(strip=True)) if title_tag else None
+        link = f"https://www.yna.co.kr{link_tag['href']}" if link_tag and "href" in link_tag.attrs else None
+        date = clean_text(date_tag.get_text(strip=True)) if date_tag else None
+        summary = clean_text(summary_tag.get_text(strip=True)) if summary_tag else None
+        image_url = image_tag["src"] if image_tag and "src" in image_tag.attrs else None
 
         news_items.append({
             "title": title,
-            "link": f"https://www.yna.co.kr{link}" if "링크 없음" not in link else None,
+            "link": link,
             "date": date,
-            "summary": summary
+            "summary": summary,
+            "image_url": image_url
         })
 
     # ✅ 전체 뉴스 리스트에 추가
@@ -110,9 +130,9 @@ while True:
 
         if not next_page_url:
             print("🚪 다음 페이지가 없습니다. 크롤링 종료.")
-            break  # 더 이상 페이지가 없으면 종료
+            break
 
-        page += 1  # 다음 페이지로 이동
+        page += 1
     except:
         print("🚪 다음 페이지 버튼을 찾을 수 없습니다. 크롤링 종료.")
         break
@@ -120,25 +140,52 @@ while True:
 # ✅ 크롤링된 데이터를 데이터프레임으로 변환
 df = pd.DataFrame(all_news)
 
-# ✅ CSV 저장
+# ✅ CSV 저장 (MongoDB 및 SQL Import-Friendly)
 csv_path = os.path.join(DATA_DIR, "latest_news.csv")
-df.to_csv(csv_path, index=False, encoding="utf-8-sig")
+df.to_csv(csv_path, index=False, encoding="utf-8-sig", na_rep="NULL", quotechar='"', doublequote=True)
 
-# ✅ PKL 저장
+# ✅ JSON 저장 (MongoDB Import-Friendly)
+json_path = os.path.join(DATA_DIR, "latest_news.json")
+with open(json_path, "w", encoding="utf-8") as f:
+    json.dump(df.to_dict(orient="records"), f, ensure_ascii=False, indent=4)
+
+# ✅ Pickle 저장 (Python 객체 그대로 저장, 성능 최적화)
 pkl_path = os.path.join(DATA_DIR, "latest_news.pkl")
-df.to_pickle(pkl_path)
+with open(pkl_path, "wb") as f:
+    pickle.dump(df, f, protocol=pickle.HIGHEST_PROTOCOL)
+
+# ✅ MongoDB 저장
+mongo_client = MongoClient("mongodb://localhost:27017/")
+mongo_db = mongo_client["news_db"]
+mongo_collection = mongo_db["latest_news"]
+
+# ✅ 기존 데이터 삭제 (권한 문제 방지)
+try:
+    mongo_collection.delete_many({})
+    print("🗑 MongoDB 기존 데이터 삭제 완료.")
+except Exception as e:
+    print(f"⚠️ MongoDB 데이터 삭제 오류 발생: {e}")
+
+# ✅ 새 데이터 삽입
+try:
+    mongo_collection.insert_many(df.to_dict(orient="records"))
+    print("✅ MongoDB 데이터 저장 완료.")
+except Exception as e:
+    print(f"⚠️ MongoDB 데이터 삽입 오류 발생: {e}")
 
 print(f"✅ 총 {len(df)}개의 뉴스 기사가 수집되었습니다.")
 print(f"📂 CSV 파일 저장 완료: {csv_path}")
-print(f"📂 PKL 파일 저장 완료: {pkl_path}")
+print(f"📂 JSON 파일 저장 완료: {json_path}")
+print(f"📂 Pickle 파일 저장 완료: {pkl_path}")
+print("📂 MongoDB 저장 완료!")
 
 # ✅ 브라우저 종료
 browser.quit()
 print("🚪 브라우저 종료 완료!")
 
-# ✅ 크롤링된 데이터 확인 (일반 Python 환경에서도 가능)
+# ✅ 크롤링된 데이터 확인
 if not df.empty:
     print("🔍 크롤링된 데이터 미리보기:")
-    print(df.head())  # ✅ 일반 Python 환경에서도 실행 가능
+    print(df.head())
 else:
     print("⚠️ 크롤링된 데이터가 없습니다. 확인이 필요합니다.")

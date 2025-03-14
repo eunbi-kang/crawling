@@ -1,0 +1,1283 @@
+1. <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+2. <html lang="ko-KR">
+3. <head>
+4. <title>G마켓-노트북/데스크탑</title>
+5. <meta http-equiv='Content-Type' content='text/html; charset=euc-kr'>
+6. <meta http-equiv="X-UA-Compatible" content="IE=edge">
+7. <meta name="format-detection" content="telephone=no">
+8. <meta name="format-detection" content="date=no">
+9. <meta name="format-detection" content="address=no">
+10. <meta name="format-detection" content="email=no">
+11. <meta name='description' content='노트북/데스크탑,노트북용품,노트북,데스크탑'>
+12. <meta name='keywords' content='노트북/데스크탑,노트북용품,노트북,데스크탑'>
+13. <link href='//script.gmarket.co.kr/pc/css/ko/common.css' rel='stylesheet' type='text/css'>
+14. <link href='//script.gmarket.co.kr/pc/css/common/kr/ui/desktop_layout.css' rel='stylesheet' type='text/css'>
+15. <link href='//script.gmarket.co.kr/pc/css/ko/item_cpp.css' rel='stylesheet' type='text/css'>
+16. <script type="text/javascript" src="//static.criteo.net/js/ld/ld.js" async="true"></script>
+17. <link rel='shortcut icon' href='//image.gmarket.co.kr/favicon/gmarket.ico'>
+18. <meta name='msapplication-starturl' content='//www.gmarket.co.kr/?jaehuid=200004313'>
+19. <meta name='msapplication-task' content='name=G마켓 베스트; action-uri=http://promotion.gmarket.co.kr/bestseller/BestSeller.asp?jaehuid=200004313; icon-uri=//image.gmarket.co.kr/favicon/bestseller.ico'>
+20. <meta name='msapplication-task' content='name=이벤트/쿠폰; action-uri=http://promotion.gmarket.co.kr/eventzone/Info.asp?jaehuid=200004313; icon-uri=//image.gmarket.co.kr/favicon/eventcoupon.ico'>
+21. <meta name='msapplication-task' content='name=플러스존; action-uri=http://pluszone.gmarket.co.kr/default.asp?jaehuid=200004313; icon-uri=//image.gmarket.co.kr/favicon/pluszone.ico'>
+22. <meta name='msapplication-task' content='name=최근구매내역; action-uri=//www.gmarket.co.kr/challenge/neo_my_gd/order_contract_list.asp?jaehuid=200004313; icon-uri=//image.gmarket.co.kr/favicon/orderlist.ico'>
+23. <meta name='msapplication-task' content='name=나의 장바구니; action-uri=//www.gmarket.co.kr/payment/Basket.asp?jaehuid=200004313; icon-uri=//image.gmarket.co.kr/favicon/basket.ico'>
+24. <meta property="fb:admins" content="100000991027914">
+25. <script type='text/javascript' src='//www.gmarket.co.kr/challenge/neo_include/favicon.js'></script>
+26. </head>
+27. <script type="text/javascript" src="/challenge/neo_include/neverdie.js" charset="euc-kr"></script>
+28. <script type='text/javascript' src='/challenge/neo_include/gmkt.js'></script>
+29. <script type='text/javascript' src='//script.gmarket.co.kr/jQuery/1.6.4/jquery-1.6.4.min.js'></script>
+30. <script type='text/javascript' src='/listview/js/CategoryLargeFuction.js'></script>
+31. <script type='text/javascript' src='/js_data/CategoryLargeJsData_100000002.js'></script>
+32. <script type="text/javascript" defer="defer" src="/challenge/neo_include/js/impression.js"></script>
+33.
+34. <body>
+35.
+36. <!--// MenuTopDefaultControl -->
+37. <!--[if IE 6]>
+38. <script src="//script.gmarket.co.kr/js/www/main/DD_belatedPNG.js"></script>
+39. <script>
+40. DD_belatedPNG.fix('#header');
+41. </script>
+42. <![endif]-->
+43. <div id="skip-navigation">
+44. <strong class="for-a11y">스킵 네비게이션</strong>
+45. <ul>
+46. <li><a href="#skip-navigation-search">검색창 바로가기</a></li>
+47. <li><a href="#skip-navigation-category-all">전체카테고리 바로가기</a></li>
+48. <li><a href="#container">본문 바로가기</a></li>
+49. </ul>
+50. </div>
+51.
+52.
+53. <script type='text/javascript' src='//script.gmarket.co.kr/fnp/desktop-layout.js' charset="utf-8"></script>
+54. <div id="header"></div>
+55. <script>
+56. DesktopLayout.render([
+57. {
+58. name: "Header",
+59. params: {"type":"sub","user":{"type":"0","name":"","grade":"Unknown"},"isAdult":false},
+60. container: document.getElementById("header"),
+61. }
+62. ]);
+63. </script>
+64.
+65.
+66. <a name="top"></a>
+67. <div id="container">
+68. <!-- Begin [Region1] -->
+69. <div class="cate-select">
+70. <div class="cate-select-cont">
+71. <div class="big-cate-view">
+72. <input type="hidden" name="LargeCode" id="LargeCode" value="100000002" />
+73. <input type="hidden" name="SortFlag" id="SortFlag" value="B" />
+74. <h2><a href="javascript:openCategoryLayer();GoSNAChannel('CCP0A002', '', 'stat');" id="divCategoryLogo" onmouseover="javascript:onCategoryLayer();" onmouseout="javascript:onCategoryLayer();"><img src="http://image.gmarket.co.kr/cp/cpp/150424/100000002.png" alt="노트북/데스크탑"></a></h2>
+75. <div class="cate-search-layer" id="divCategoryLayer" style="display:none;">
+76. <ul class="cate-tab">
+77.
+78. <li class="on"><a onfocus="focus();" class="type3"><img src="http://image.gmarket.co.kr/cp/cpp/120503/tab_cate_search01.gif" alt="ITEM"></a></li>
+79.
+80. </ul>
+81. <div class="item-list" id="divCategoryItemLayer">
+82. <div class="search-box">
+83. <form name="item_form" id="item_form" onsubmit="return searchItemKeyword();">
+84. <div>
+85. <input type="text" name="txtItemKeyword" id="txtItemKeyword" class="txt" onmousedown="doItemInput();" onkeydown="doItemInput();" value="찾으시는 ITEM명을 입력하세요." title="카테고리 내 아이템 검색 입력 창">
+86. <input type="image" src="http://image.gmarket.co.kr/cp/cpp/120503/btn/search2.gif" class="btn" onclick="GoSNAChannel('CCP0D002', '', 'stat');" alt="검색">
+87. </div>
+88. </form>
+89. </div>
+90. <div class="mid-all-list" id="divMiddleLayer">
+91.
+92. <div>
+93.
+94. <h3><a href="javascript:GoSNAChannel('CCP0D005_1', 'http://browse.gmarket.co.kr/list?category=200001966', '');">노트북</a></h3>
+95. <ul>
+96.
+97. <li><a href="javascript:GoSNAChannel('CCP0D005_1_1', 'http://browse.gmarket.co.kr/list?category=300021072', '');">노트북</a></li>
+98.
+99.
+100. </ul>
+101.
+102. </div>
+103.
+104. <div>
+105.
+106. <h3><a href="javascript:GoSNAChannel('CCP0D005_2', 'http://browse.gmarket.co.kr/list?category=200000433', '');">데스크탑</a></h3>
+107. <ul>
+108.
+109. <li><a href="javascript:GoSNAChannel('CCP0D005_2_1', 'http://browse.gmarket.co.kr/list?category=300004032', '');">브랜드PC</a></li>
+110.
+111.
+112. <li><a href="javascript:GoSNAChannel('CCP0D005_2_2', 'http://browse.gmarket.co.kr/list?category=300028503', '');">조립PC</a></li>
+113.
+114.
+115. <li><a href="javascript:GoSNAChannel('CCP0D005_2_3', 'http://browse.gmarket.co.kr/list?category=300028504', '');">올인원PC</a></li>
+116.
+117.
+118. <li><a href="javascript:GoSNAChannel('CCP0D005_2_4', 'http://browse.gmarket.co.kr/list?category=300028505', '');">미니PC/베어본</a></li>
+119.
+120.
+121. <li><a href="javascript:GoSNAChannel('CCP0D005_2_5', 'http://browse.gmarket.co.kr/list?category=300028506', '');">서버/워크스테이션</a></li>
+122.
+123.
+124. </ul>
+125.
+126. </div>
+127.
+128. <div>
+129.
+130. </div>
+131.
+132. <div>
+133.
+134. <h3><a href="javascript:GoSNAChannel('CCP0D005_3', 'http://browse.gmarket.co.kr/list?category=200001091', '');">노트북용품</a></h3>
+135. <ul>
+136.
+137. <li><a href="javascript:GoSNAChannel('CCP0D005_3_1', 'http://browse.gmarket.co.kr/list?category=300011634', '');">기타노트북용품</a></li>
+138.
+139.
+140. <li><a href="javascript:GoSNAChannel('CCP0D005_3_2', 'http://browse.gmarket.co.kr/list?category=300011630', '');">노트북도난방지</a></li>
+141.
+142.
+143. <li><a href="javascript:GoSNAChannel('CCP0D005_3_3', 'http://browse.gmarket.co.kr/list?category=300028497', '');">노트북가방/파우치</a></li>
+144.
+145.
+146. <li><a href="javascript:GoSNAChannel('CCP0D005_3_4', 'http://browse.gmarket.co.kr/list?category=300028498', '');">노트북받침대/쿨러</a></li>
+147.
+148.
+149. <li><a href="javascript:GoSNAChannel('CCP0D005_3_5', 'http://browse.gmarket.co.kr/list?category=300028499', '');">노트북보호필름</a></li>
+150.
+151.
+152. <li><a href="javascript:GoSNAChannel('CCP0D005_3_6', 'http://browse.gmarket.co.kr/list?category=300028500', '');">노트북키스킨</a></li>
+153.
+154.
+155. <li><a href="javascript:GoSNAChannel('CCP0D005_3_7', 'http://browse.gmarket.co.kr/list?category=300028501', '');">노트북배터리</a></li>
+156.
+157.
+158. <li><a href="javascript:GoSNAChannel('CCP0D005_3_8', 'http://browse.gmarket.co.kr/list?category=300028502', '');">노트북어댑터</a></li>
+159.
+160.
+161. </ul>
+162.
+163. </div>
+164.
+165. <div>
+166.
+167. </div>
+168.
+169. </div>
+170. </div>
+171.
+172. <div class="close">
+173. <input type="image" src="http://image.gmarket.co.kr/cp/cpp/120503/btn/close.gif" onclick="openCategoryLayer();" alt="닫기">
+174. </div>
+175. </div>
+176. </div>
+177.
+178. <div class="cate-list" id="gnb">
+179. <!--<ul class="mid-cate fir-mid-cate">-->
+180.
+181. <div class="cate_title">노트북</div>
+182.
+183. <ul class="mid-cate ">
+184.
+185. <li>
+186.
+187. <a href="javascript:GoSNAChannel('CCP0A003', 'http://browse.gmarket.co.kr/list?category=200001966', '');">노트북</a>
+188. <a href="javascript:mobileLayerLink('1', 0);" class="arrow" title="노트북 하위메뉴">하위메뉴</a><!-- 2013-08-09 -->
+189.
+190. <div class="small-cate-layer" style="display:none;">
+191. <div class="layer-box">
+192. <ul>
+193.
+194. <li><a href="javascript:GoSNAChannel('CCP0C001', 'http://browse.gmarket.co.kr/list?category=300021072', '');">노트북</a></li>
+195.
+196. </ul>
+197.
+198. <div class="foot"><a href="javascript:;" onclick="$j(this).parent().parent().parent().hide();" class="button_close">닫기</a></div>
+199. </div>
+200. </div>
+201.
+202. </li>
+203.
+204. </ul>
+205. <div class="cate_title">노트북 액세서리</div>
+206.
+207. <ul class="mid-cate ">
+208.
+209. <li>
+210.
+211. <a href="javascript:GoSNAChannel('CCP0A003', 'http://browse.gmarket.co.kr/list?category=200001091', '');">노트북용품</a>
+212. <a href="javascript:mobileLayerLink('1', 1);" class="arrow" title="노트북용품 하위메뉴">하위메뉴</a><!-- 2013-08-09 -->
+213.
+214. <div class="small-cate-layer" style="display:none;">
+215. <div class="layer-box">
+216. <ul>
+217.
+218. <li><a href="javascript:GoSNAChannel('CCP0C001', 'http://browse.gmarket.co.kr/list?category=300011634', '');">기타노트북용품</a></li>
+219.
+220. <li><a href="javascript:GoSNAChannel('CCP0C001', 'http://browse.gmarket.co.kr/list?category=300011630', '');">노트북도난방지</a></li>
+221.
+222. <li><a href="javascript:GoSNAChannel('CCP0C001', 'http://browse.gmarket.co.kr/list?category=300028497', '');">노트북가방/파우치</a></li>
+223.
+224. <li><a href="javascript:GoSNAChannel('CCP0C001', 'http://browse.gmarket.co.kr/list?category=300028498', '');">노트북받침대/쿨러</a></li>
+225.
+226. <li><a href="javascript:GoSNAChannel('CCP0C001', 'http://browse.gmarket.co.kr/list?category=300028499', '');">노트북보호필름</a></li>
+227.
+228. <li><a href="javascript:GoSNAChannel('CCP0C001', 'http://browse.gmarket.co.kr/list?category=300028500', '');">노트북키스킨</a></li>
+229.
+230. <li><a href="javascript:GoSNAChannel('CCP0C001', 'http://browse.gmarket.co.kr/list?category=300028501', '');">노트북배터리</a></li>
+231.
+232. <li><a href="javascript:GoSNAChannel('CCP0C001', 'http://browse.gmarket.co.kr/list?category=300028502', '');">노트북어댑터</a></li>
+233.
+234. </ul>
+235.
+236. <div class="foot"><a href="javascript:;" onclick="$j(this).parent().parent().parent().hide();" class="button_close">닫기</a></div>
+237. </div>
+238. </div>
+239.
+240. </li>
+241.
+242. </ul>
+243. <div class="cate_title">데스크탑</div>
+244.
+245. <ul class="mid-cate ">
+246.
+247. <li>
+248.
+249. <a href="javascript:GoSNAChannel('CCP0A003', 'http://browse.gmarket.co.kr/list?category=200000433', '');">데스크탑</a>
+250. <a href="javascript:mobileLayerLink('1', 2);" class="arrow" title="데스크탑 하위메뉴">하위메뉴</a><!-- 2013-08-09 -->
+251.
+252. <div class="small-cate-layer" style="display:none;">
+253. <div class="layer-box">
+254. <ul>
+255.
+256. <li><a href="javascript:GoSNAChannel('CCP0C001', 'http://browse.gmarket.co.kr/list?category=300004032', '');">브랜드PC</a></li>
+257.
+258. <li><a href="javascript:GoSNAChannel('CCP0C001', 'http://browse.gmarket.co.kr/list?category=300028503', '');">조립PC</a></li>
+259.
+260. <li><a href="javascript:GoSNAChannel('CCP0C001', 'http://browse.gmarket.co.kr/list?category=300028504', '');">올인원PC</a></li>
+261.
+262. <li><a href="javascript:GoSNAChannel('CCP0C001', 'http://browse.gmarket.co.kr/list?category=300028505', '');">미니PC/베어본</a></li>
+263.
+264. <li><a href="javascript:GoSNAChannel('CCP0C001', 'http://browse.gmarket.co.kr/list?category=300028506', '');">서버/워크스테이션</a></li>
+265.
+266. </ul>
+267.
+268. <div class="foot"><a href="javascript:;" onclick="$j(this).parent().parent().parent().hide();" class="button_close">닫기</a></div>
+269. </div>
+270. </div>
+271.
+272. </li>
+273.
+274. </ul>
+275. </div>
+276. </div>
+277. <div class="search-condition">
+278. <h3><img src="http://image.gmarket.co.kr/cp/cpp/120503/tit01.gif" alt="카테고리 내 검색"></h3>
+279. <div class="condition">
+280. <form name="search_form" id="search_form" action="//browse.gmarket.co.kr/search" method="get" onsubmit="return searchLargeCategory();">
+281. <input type="hidden" name="keyword" id="keyword" value=""/>
+282. <input type="hidden" name="f" id="gdlc" value="c:100000002"/>
+283. <div class="search-result">
+284. <div class="search-select">
+285. <a href="#" onclick="showCategoryLayer('divLeftCategoryLayer');GoSNAChannel('CCP0F001','', 'stat'); return false;">
+286. <span id="divLeftCategoryName">노트북/데스크탑</span>
+287. <img id="selectLayerButton" src="http://image.gmarket.co.kr/cp/cpp/120503/btn/select_down.gif" alt="검색 선택 레이어 열림">
+288. </a>
+289. </div>
+290. <div id="divLeftCategoryLayer" class="search-select-layer" style="display:none;">
+291. <ul>
+292.
+293. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_1');selectSearchCategory('100000103', '브랜드 여성의류'); closeLayer('divLeftCategoryLayer'); return false;">브랜드 여성의류</a></li>
+294.
+295. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_2');selectSearchCategory('100000104', '브랜드 남성의류'); closeLayer('divLeftCategoryLayer'); return false;">브랜드 남성의류</a></li>
+296.
+297. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_3');selectSearchCategory('100000105', '브랜드 진/캐쥬얼'); closeLayer('divLeftCategoryLayer'); return false;">브랜드 진/캐쥬얼</a></li>
+298.
+299. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_4');selectSearchCategory('100000106', '브랜드 신발/가방'); closeLayer('divLeftCategoryLayer'); return false;">브랜드 신발/가방</a></li>
+300.
+301. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_5');selectSearchCategory('100000107', '브랜드 쥬얼리/시계'); closeLayer('divLeftCategoryLayer'); return false;">브랜드 쥬얼리/시계</a></li>
+302.
+303. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_6');selectSearchCategory('100000003', '여성의류'); closeLayer('divLeftCategoryLayer'); return false;">여성의류</a></li>
+304.
+305. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_7');selectSearchCategory('100000046', '남성의류'); closeLayer('divLeftCategoryLayer'); return false;">남성의류</a></li>
+306.
+307. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_8');selectSearchCategory('100000070', '언더웨어'); closeLayer('divLeftCategoryLayer'); return false;">언더웨어</a></li>
+308.
+309. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_9');selectSearchCategory('100000049', '신발'); closeLayer('divLeftCategoryLayer'); return false;">신발</a></li>
+310.
+311. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_10');selectSearchCategory('100000064', '가방/잡화'); closeLayer('divLeftCategoryLayer'); return false;">가방/잡화</a></li>
+312.
+313. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_11');selectSearchCategory('100000027', '쥬얼리/시계'); closeLayer('divLeftCategoryLayer'); return false;">쥬얼리/시계</a></li>
+314.
+315. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_12');selectSearchCategory('100000096', '수입 명품'); closeLayer('divLeftCategoryLayer'); return false;">수입 명품</a></li>
+316.
+317. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_13');selectSearchCategory('100000005', '화장품/향수'); closeLayer('divLeftCategoryLayer'); return false;">화장품/향수</a></li>
+318.
+319. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_14');selectSearchCategory('100000071', '바디/헤어'); closeLayer('divLeftCategoryLayer'); return false;">바디/헤어</a></li>
+320.
+321. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_15');selectSearchCategory('100000006', '출산/육아'); closeLayer('divLeftCategoryLayer'); return false;">출산/육아</a></li>
+322.
+323. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_16');selectSearchCategory('100000042', '장난감/완구'); closeLayer('divLeftCategoryLayer'); return false;">장난감/완구</a></li>
+324.
+325. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_17');selectSearchCategory('100000035', '유아동의류'); closeLayer('divLeftCategoryLayer'); return false;">유아동의류</a></li>
+326.
+327. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_18');selectSearchCategory('100000095', '유아동신발/잡화'); closeLayer('divLeftCategoryLayer'); return false;">유아동신발/잡화</a></li>
+328.
+329. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_19');selectSearchCategory('100000020', '신선식품'); closeLayer('divLeftCategoryLayer'); return false;">신선식품</a></li>
+330.
+331. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_20');selectSearchCategory('100000036', '가공식품'); closeLayer('divLeftCategoryLayer'); return false;">가공식품</a></li>
+332.
+333. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_21');selectSearchCategory('100000068', '건강식품'); closeLayer('divLeftCategoryLayer'); return false;">건강식품</a></li>
+334.
+335. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_22');selectSearchCategory('100000094', '커피/음료'); closeLayer('divLeftCategoryLayer'); return false;">커피/음료</a></li>
+336.
+337. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_23');selectSearchCategory('100000074', '생필품'); closeLayer('divLeftCategoryLayer'); return false;">생필품</a></li>
+338.
+339. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_24');selectSearchCategory('100000031', '가구/DIY'); closeLayer('divLeftCategoryLayer'); return false;">가구/DIY</a></li>
+340.
+341. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_25');selectSearchCategory('100000039', '침구/커튼'); closeLayer('divLeftCategoryLayer'); return false;">침구/커튼</a></li>
+342.
+343. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_26');selectSearchCategory('100000093', '조명/인테리어'); closeLayer('divLeftCategoryLayer'); return false;">조명/인테리어</a></li>
+344.
+345. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_27');selectSearchCategory('100000014', '생활용품'); closeLayer('divLeftCategoryLayer'); return false;">생활용품</a></li>
+346.
+347. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_28');selectSearchCategory('100000085', '주방용품'); closeLayer('divLeftCategoryLayer'); return false;">주방용품</a></li>
+348.
+349. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_29');selectSearchCategory('100000041', '꽃/이벤트용품'); closeLayer('divLeftCategoryLayer'); return false;">꽃/이벤트용품</a></li>
+350.
+351. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_30');selectSearchCategory('100000083', '건강/의료용품'); closeLayer('divLeftCategoryLayer'); return false;">건강/의료용품</a></li>
+352.
+353. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_31');selectSearchCategory('100000112', '렌탈 서비스'); closeLayer('divLeftCategoryLayer'); return false;">렌탈 서비스</a></li>
+354.
+355. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_32');selectSearchCategory('100000045', '문구/사무용품'); closeLayer('divLeftCategoryLayer'); return false;">문구/사무용품</a></li>
+356.
+357. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_33');selectSearchCategory('100000091', '악기/취미'); closeLayer('divLeftCategoryLayer'); return false;">악기/취미</a></li>
+358.
+359. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_34');selectSearchCategory('100000038', '반려동물용품'); closeLayer('divLeftCategoryLayer'); return false;">반려동물용품</a></li>
+360.
+361. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_35');selectSearchCategory('100000043', '스포츠의류/운동화'); closeLayer('divLeftCategoryLayer'); return false;">스포츠의류/운동화</a></li>
+362.
+363. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_36');selectSearchCategory('100000037', '휘트니스/수영'); closeLayer('divLeftCategoryLayer'); return false;">휘트니스/수영</a></li>
+364.
+365. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_37');selectSearchCategory('100000098', '구기/라켓'); closeLayer('divLeftCategoryLayer'); return false;">구기/라켓</a></li>
+366.
+367. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_38');selectSearchCategory('100000058', '골프'); closeLayer('divLeftCategoryLayer'); return false;">골프</a></li>
+368.
+369. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_39');selectSearchCategory('100000097', '자전거/보드/기타레저'); closeLayer('divLeftCategoryLayer'); return false;">자전거/보드/기타레저</a></li>
+370.
+371. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_40');selectSearchCategory('100000017', '캠핑/낚시'); closeLayer('divLeftCategoryLayer'); return false;">캠핑/낚시</a></li>
+372.
+373. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_41');selectSearchCategory('100000099', '등산/아웃도어'); closeLayer('divLeftCategoryLayer'); return false;">등산/아웃도어</a></li>
+374.
+375. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_42');selectSearchCategory('100000030', '자동차용품'); closeLayer('divLeftCategoryLayer'); return false;">자동차용품</a></li>
+376.
+377. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_43');selectSearchCategory('100000076', '공구/안전/산업용품'); closeLayer('divLeftCategoryLayer'); return false;">공구/안전/산업용품</a></li>
+378.
+379. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_44');selectSearchCategory('100000032', '영상가전'); closeLayer('divLeftCategoryLayer'); return false;">영상가전</a></li>
+380.
+381. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_45');selectSearchCategory('100000008', '주방가전'); closeLayer('divLeftCategoryLayer'); return false;">주방가전</a></li>
+382.
+383. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_46');selectSearchCategory('100000077', '계절가전'); closeLayer('divLeftCategoryLayer'); return false;">계절가전</a></li>
+384.
+385. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_47');selectSearchCategory('100000092', '생활/미용가전'); closeLayer('divLeftCategoryLayer'); return false;">생활/미용가전</a></li>
+386.
+387. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_48');selectSearchCategory('100000056', '모바일/태블릿'); closeLayer('divLeftCategoryLayer'); return false;">모바일/태블릿</a></li>
+388.
+389. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_49');selectSearchCategory('100000033', '카메라'); closeLayer('divLeftCategoryLayer'); return false;">카메라</a></li>
+390.
+391. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_50');selectSearchCategory('100000111', '게임'); closeLayer('divLeftCategoryLayer'); return false;">게임</a></li>
+392.
+393. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_51');selectSearchCategory('100000102', '음향기기'); closeLayer('divLeftCategoryLayer'); return false;">음향기기</a></li>
+394.
+395. <li class="on"><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_52');selectSearchCategory('100000002', '노트북/PC'); closeLayer('divLeftCategoryLayer'); return false;">노트북/PC</a></li>
+396.
+397. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_53');selectSearchCategory('100000082', '모니터/프린터'); closeLayer('divLeftCategoryLayer'); return false;">모니터/프린터</a></li>
+398.
+399. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_54');selectSearchCategory('100000055', 'PC주변기기'); closeLayer('divLeftCategoryLayer'); return false;">PC주변기기</a></li>
+400.
+401. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_55');selectSearchCategory('100000075', '저장장치'); closeLayer('divLeftCategoryLayer'); return false;">저장장치</a></li>
+402.
+403. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_56');selectSearchCategory('100000013', '여행/항공권'); closeLayer('divLeftCategoryLayer'); return false;">여행/항공권</a></li>
+404.
+405. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_57');selectSearchCategory('100000028', '도서음반/e교육'); closeLayer('divLeftCategoryLayer'); return false;">도서음반/e교육</a></li>
+406.
+407. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_58');selectSearchCategory('100000059', '티켓'); closeLayer('divLeftCategoryLayer'); return false;">티켓</a></li>
+408.
+409. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_59');selectSearchCategory('100000048', 'e쿠폰'); closeLayer('divLeftCategoryLayer'); return false;">e쿠폰</a></li>
+410.
+411. <li><a href="#" onclick="GoSNAChannelNoUrl('CCP0F001_60');selectSearchCategory('100000084', '상품권'); closeLayer('divLeftCategoryLayer'); return false;">상품권</a></li>
+412.
+413. </ul>
+414. </div>
+415. </div>
+416. <div class="input-search-word">
+417. <input type="text" name="txtSrchKeyword" id="txtSrchKeyword" title="카테고리 내 검색 입력 창" class="txt" maxlength="25">
+418. <input type="image" src="http://image.gmarket.co.kr/cp/cpp/120503/btn/search.gif" onclick="javascript:GoSNAChannel('CCP0F003','', 'stat');" class="btn" alt="검색">
+419. </div>
+420. </form>
+421. </div>
+422.
+423. <div class="banner banner-no">
+424.
+425. </div>
+426. </div>
+427. </div>
+428. <!-- End [Region1] -->
+429.
+430. <div class="cate-search-result">
+431. <!-- Begin [Region2] -->
+432. <div class="location-best-rank">
+433. <div class="location">
+434. <div class="prev-page">
+435. <a href="javascript:fnCppGoBack();">이전페이지</a>
+436. </div>
+437. <div class="home">
+438. <a href="javascript:GoSNAChannel('CCP0A009', 'http://www.gmarket.co.kr/');">홈</a> &gt;
+439. </div>
+440. <div class="select-cate-cont">
+441. <div class="select">
+442. <a href="#" onclick="showCategoryLayer('divTopCategoryLayer'); GoSNAChannel('CCP0A010','', 'stat'); return false;">
+443. <span>노트북/데스크탑</span>
+444. <img id="selectLayerButton2" src="http://image.gmarket.co.kr/cp/cpp/120503/btn/select_down2.gif" alt="카테고리 선택 레이어 열림">
+445. </a>
+446. </div>
+447. <div id="divTopCategoryLayer" class="select-layer" style="display:none;">
+448. <ul>
+449.
+450. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000103">브랜드 여성의류</a></li>
+451.
+452. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000104">브랜드 남성의류</a></li>
+453.
+454. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000105">브랜드 진/캐쥬얼</a></li>
+455.
+456. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000106">브랜드 신발/가방</a></li>
+457.
+458. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000107">브랜드 쥬얼리/시계</a></li>
+459.
+460. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000003">여성의류</a></li>
+461.
+462. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000046">남성의류</a></li>
+463.
+464. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000070">언더웨어</a></li>
+465.
+466. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000049">신발</a></li>
+467.
+468. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000064">가방/잡화</a></li>
+469.
+470. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000027">쥬얼리/시계</a></li>
+471.
+472. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000096">수입 명품</a></li>
+473.
+474. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000005">화장품/향수</a></li>
+475.
+476. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000071">바디/헤어</a></li>
+477.
+478. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000006">출산/육아</a></li>
+479.
+480. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000042">장난감/완구</a></li>
+481.
+482. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000035">유아동의류</a></li>
+483.
+484. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000095">유아동신발/잡화</a></li>
+485.
+486. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000020">신선식품</a></li>
+487.
+488. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000036">가공식품</a></li>
+489.
+490. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000068">건강식품</a></li>
+491.
+492. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000094">커피/음료</a></li>
+493.
+494. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000074">생필품</a></li>
+495.
+496. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000031">가구/DIY</a></li>
+497.
+498. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000039">침구/커튼</a></li>
+499.
+500. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000093">조명/인테리어</a></li>
+501.
+502. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000014">생활용품</a></li>
+503.
+504. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000085">주방용품</a></li>
+505.
+506. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000041">꽃/이벤트용품</a></li>
+507.
+508. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000083">건강/의료용품</a></li>
+509.
+510. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000112">렌탈 서비스</a></li>
+511.
+512. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000045">문구/사무용품</a></li>
+513.
+514. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000091">악기/취미</a></li>
+515.
+516. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000038">반려동물용품</a></li>
+517.
+518. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000043">스포츠의류/운동화</a></li>
+519.
+520. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000037">휘트니스/수영</a></li>
+521.
+522. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000098">구기/라켓</a></li>
+523.
+524. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000058">골프</a></li>
+525.
+526. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000097">자전거/보드/기타레저</a></li>
+527.
+528. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000017">캠핑/낚시</a></li>
+529.
+530. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000099">등산/아웃도어</a></li>
+531.
+532. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000030">자동차용품</a></li>
+533.
+534. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000076">공구/안전/산업용품</a></li>
+535.
+536. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000032">영상가전</a></li>
+537.
+538. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000008">주방가전</a></li>
+539.
+540. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000077">계절가전</a></li>
+541.
+542. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000092">생활/미용가전</a></li>
+543.
+544. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000056">모바일/태블릿</a></li>
+545.
+546. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000033">카메라</a></li>
+547.
+548. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000111">게임</a></li>
+549.
+550. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000102">음향기기</a></li>
+551.
+552. <li class="on"><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000002">노트북/PC</a></li>
+553.
+554. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000082">모니터/프린터</a></li>
+555.
+556. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000055">PC주변기기</a></li>
+557.
+558. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000075">저장장치</a></li>
+559.
+560. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000013">여행/항공권</a></li>
+561.
+562. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000028">도서음반/e교육</a></li>
+563.
+564. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000059">티켓</a></li>
+565.
+566. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000048">e쿠폰</a></li>
+567.
+568. <li><a href="http://category.gmarket.co.kr/listview/LList.aspx?gdlc_cd=100000084">상품권</a></li>
+569.
+570. </ul>
+571. </div>
+572. </div>
+573. </div>
+574. <div class="best-rank">
+575.
+576. </div>
+577. </div>
+578. <!-- End [Region2] -->
+579. <!-- Begin [Region3] -->
+580. <div class="promotion">
+581. <div class="promotion-type1">
+582. <div class="img" id="CategoryMainBanner">
+583. <a href="javascript:GoSNAChannel('CCP0A012', 'http://promotion.gmarket.co.kr/planview/plan.asp?sid=105174', '');"><img src="" alt=""></a>
+584. </div>
+585.
+586. <a href="javascript:GSPrev('GAdPro');GAdProtabClassOn(-1);" class="prev">이전</a>
+587. <a href="javascript:GSNext('GAdPro');GAdProtabClassOn(1);" class="next">다음</a>
+588. <ul class="select_bar" id="GAdProList">
+589.
+590. </ul>
+591. <script language="javascript">
+592.
+593. function GAdProBannerView() {
+594.
+595. var htmlString = "";
+596. var adReportNum = "";
+597. if (GSCnt_GAdPro != 0) {
+598.
+599. for (var i = 1; i <= GSCnt_GAdPro; i++) {
+600. htmlString += "<li><a id=\"GAdPro_" + i + "URL2\" onmouseover=\"javascript:viewGAdProLayerStop(" + i + ", 'bar');\" onmouseout=\"javascript:GAdProtabFixedClassOn();\" class=\"png24\">";
+601. htmlString += "<img id=\"GAdPro_" + i + "URL2_IMG\" src=\"http://image.gmarket.co.kr/cp/cpp/131007/btn_bar_on.png\" alt=\"첫번째\"></a></li>";
+602.
+603. //-- impression start
+604. if (i > 0) adReportNum += ",";
+605. adReportNum += "A24R0S2015619_" + i;
+606. //-- impression End
+607. }
+608. }
+609.
+610. //-- impression start
+611. if (adReportNum != "")
+612. adReportImg = "<img src='http://pds.gmarket.co.kr/ub/add/1/impression/ad/1?ids=" + adReportNum + "' style='display:none;' width='0' height='0' alt='빈이미지' />";
+613. //-- impression End
+614.
+615. $(GAdProList).innerHTML = htmlString;
+616. }
+617.
+618. GAdProBannerView();
+619. </script>
+620. </div>
+621.
+622. <div class="promotion-type2">
+623. <h3><img src="http://image.gmarket.co.kr/cp/cpp/120503/tit06.gif" alt="주목! 이상품" /></h3>
+624. <div class="img">
+625. <a id="GMDSpec_1URL1"><img id="GMDSpec_1IMG1" alt="" /></a>
+626. </div>
+627.
+628. <div class="name">
+629. <a id="GMDSpec_1URL2"><div id="GMDSpec_1TXT1"></div></a>
+630. </div>
+631. <div class="price">
+632.
+633. <del><div id="GMDSpec_1DIV2"></div></del>
+634. <strong><div id="GMDSpec_1TXT2"></div></strong>
+635.
+636. </div>
+637.
+638. <div class="prev-next" id="GMDSpecDR">
+639. <!--<a href="javascript:GSPrev('GMDSpec');"><img src="http://image.gmarket.co.kr/cp/cpp/120503/btn/prev.gif" alt="이전" /></a><a href="javascript:GSNext('GMDSpec');"><img src="http://image.gmarket.co.kr/cp/cpp/120503/btn/next.gif" alt="다음" /></a>-->
+640. <a href="javascript:showLayer('divMDLayer');initMoreMDLayer();GoSNAChannel('CCP0A014','', 'stat');"><img src="http://image.gmarket.co.kr/cp/cpp/120503/btn/btn_plus.gif" alt="열기"></a>
+641. </div>
+642. <div id="divMDLayer" class="layer-box" style="display:none;">
+643. <div class="layer-bg">
+644. <div id="divMDSubLayer" class="layer-con">
+645. <div class="top">
+646. <a id="GMDSpecPrev" href="javascript:showMoreMDLayer(-1);GoSNAChannel('CCP0E001','', 'stat');"><img src="http://image.gmarket.co.kr/cp/cpp/120503/btn/btn_md_left.gif" alt="이전특가상품"></a>
+647. <span><img src="http://image.gmarket.co.kr/cp/cpp/120503/tit06.png" alt="MD/특가상품"></span>
+648. <a id="GMDSpecNext" href="javascript:showMoreMDLayer(1);GoSNAChannel('CCP0E001','', 'stat');"><img src="http://image.gmarket.co.kr/cp/cpp/120503/btn/btn_md_right.gif" alt="다음특가상품"></a>
+649. </div>
+650. <div class="con">
+651. <ul id="ulMDListLayer">
+652. </ul>
+653. </div>
+654. <a href="javascript:closeLayer('divMDLayer');" class="close"><img src="http://image.gmarket.co.kr/cp/cpp/120503/btn/btn_minus.png" alt="닫기"></a>
+655. </div>
+656. </div>
+657. </div>
+658. </div>
+659. <script language="javascript" type="text/javascript">
+660. GSInit('GMDSpec');
+661.
+662. var cppBannerSeq = 0;
+663. function GAdPro_Mouseover(obj, img, seq) {
+664.
+665.
+666. if (typeof arrGAdPro[(obj-1)]!= "undefiend")
+667. {
+668. $("CategoryMainBanner").innerHTML = arrGAdPro[(obj-1)]['IMG2'];
+669. }
+670. cppBannerSeq = seq;
+671.
+672.
+673. if (GSCnt_GAdPro != 0) {
+674.
+675. for (var i = 1; i <= GSCnt_GAdPro; i++) {
+676.
+677. $j("#GAdPro_"+ i +"URL2_IMG").attr("src", "http://image.gmarket.co.kr/cp/cpp/131007/btn_bar_off.png");
+678. }
+679. }
+680.
+681. $j("#" + img).attr("src", "http://image.gmarket.co.kr/cp/cpp/131007/btn_bar_on.png");
+682.
+683.
+684. }
+685. //초기화
+686. GAdPro_Init();
+687.
+688. var nGAdProLayerInitNum ;
+689. function GAdPro_Init(){
+690. var randomSeq;
+691.
+692. if (GSCnt_GAdPro != 0) {
+693.
+694. randomSeq = Math.floor((Math.random() * GSCnt_GAdPro) + 1);
+695. nGAdProLayerInitNum = randomSeq;
+696.
+697. GAdPro_Mouseover(randomSeq,"GAdPro_"+ randomSeq +"URL2_IMG",randomSeq );
+698.
+699. }
+700. else {
+701. nGAdProLayerInitNum = 1;
+702. GAdPro_Mouseover(1,"GAdPro_1URL2_IMG",1 );
+703. }
+704.
+705. }
+706.
+707.
+708. var gtRemoveClass = function (cn) {
+709. $j("ul#GAdPro-tab").find("li").each(function () {
+710. $j(this).removeClass(cn);
+711. });
+712. };
+713.
+714.
+715. function GAdProtabClassOn(num) {
+716.
+717. cppBannerSeq = cppBannerSeq + num;
+718.
+719. if(cppBannerSeq > GSCnt_GAdPro){
+720. cppBannerSeq = 1;
+721. }
+722. else if (cppBannerSeq == 0){
+723. cppBannerSeq = GSCnt_GAdPro;
+724. }
+725.
+726. if(num == -1)
+727. {
+728. --nGAdProLayerNum ;
+729. }
+730. else{
+731. ++nGAdProLayerNum ;
+732. }
+733.
+734. viewGAdProLayerStop(cppBannerSeq);
+735. }
+736.
+737.
+738. //--cpp메인배너 롤링
+739. var gAdPro_timer_wait = 5000;
+740. var gAdPro_timer = "";
+741. var nGAdProLayerCnt = GSCnt_GAdPro;
+742. var nGAdProLayerNum = nGAdProLayerInitNum;
+743.
+744. function viewGAdProLayerStop(seq, type) {
+745.
+746. if (type == "bar")
+747. {
+748. nGAdProLayerNum = seq;
+749. }
+750.
+751. var img_seq = "GAdPro_" + seq + "URL2_IMG";
+752. GAdPro_Mouseover(seq, img_seq, seq);
+753. clearTimer();
+754. }
+755.
+756. function gAdProSetTimer() {
+757. ++nGAdProLayerNum;
+758. if (nGAdProLayerNum > nGAdProLayerCnt) nGAdProLayerNum = 1;
+759.
+760. GAdPro_Mouseover(nGAdProLayerNum, "GAdPro_" + nGAdProLayerNum + "URL2_IMG", nGAdProLayerNum);
+761. gAdPro_timer = window.setTimeout("gAdProSetTimer()", gAdPro_timer_wait);
+762. }
+763.
+764. function clearTimer() {
+765. clearTimeout(gAdPro_timer);
+766. }
+767.
+768. function showTimer() {
+769. clearTimer();
+770. gAdPro_timer = window.setTimeout("gAdProSetTimer()", gAdPro_timer_wait);
+771. }
+772.
+773. gAdPro_timer = window.setTimeout("gAdProSetTimer()", gAdPro_timer_wait);
+774. //--cpp메인배너 롤링
+775.
+776.
+777. function GAdProtabFixedClassOn() {
+778. $j("ul#GAdPro-tab").find("li").each(function (index) {
+779. $j(this).mouseover(function () {
+780. $j(this).addClass("on");
+781. });
+782. });
+783. }
+784.
+785. function Right(str, n) {
+786. if (n <= 0) {
+787. return 0;
+788. } else if (n > String(str).length) {
+789. return str;
+790. } else {
+791. var iLen = String(str).length;
+792. return String(str).substring(iLen, iLen - n);
+793. }
+794. }
+795.
+796. //GSInit('GAdPro');
+797.
+798. $j("ul#GAdPro-tab li").eq(0).addClass("on");
+799. if (GSCnt_GMDSpec < 2) {
+800. document.getElementById("GMDSpecDR").style.display = "none";
+801. }
+802.
+803. var startIndex = 0;
+804. var _VIEW_CNT = 6;
+805. var imgCnt = GSCnt_GMDSpec;
+806.
+807. function showMoreMDLayer(moveIndex) {
+808. if (startIndex + moveIndex < 0) {
+809. startIndex += moveIndex;
+810. if (-startIndex == imgCnt) startIndex = 0;
+811. }
+812. else if (startIndex + moveIndex + (_VIEW_CNT - 1) >= imgCnt) {
+813. startIndex += moveIndex;
+814. if (startIndex == imgCnt) startIndex = 0;
+815. }
+816. else {
+817. startIndex += moveIndex;
+818. }
+819.
+820. if (imgCnt > 0) {
+821. var html = new Array();
+822.
+823. for (var i = 0; i < imgCnt; i++) {
+824. if (i == _VIEW_CNT) break;
+825. var moreImgIndex = startIndex + i;
+826. if (moreImgIndex < 0) moreImgIndex += imgCnt;
+827. if (moreImgIndex > (imgCnt - 1)) moreImgIndex -= imgCnt;
+828.
+829. html.push('<li>' + '\r\n');
+830. html.push(' <div class="img-layer">' + '\r\n');
+831. html.push(' <a href="' + arrGMDSpec[moreImgIndex]["URL1"] + '"><img src="' + arrGMDSpec[moreImgIndex]["IMG1"] + '" alt="' + arrGMDSpec[moreImgIndex]["TITLE"] + '"></a>' + '\r\n');
+832. html.push(' </div>' + '\r\n');
+833.
+834. html.push(' <div class="name">' + '\r\n');
+835. html.push(' <a href="' + arrGMDSpec[moreImgIndex]["URL1"] + '">' + arrGMDSpec[moreImgIndex]["TXT1"] + '</a>' + '\r\n');
+836. html.push(' </div>' + '\r\n');
+837. html.push(' <div class="price">' + '\r\n');
+838. if (typeof g_gdlc === 'string' && g_gdlc == '100000112') {
+839. html.push(' <strong><em class="text__period-unit">월</em>' + arrGMDSpec[moreImgIndex]["TXT2"] + '</strong>' + '\r\n');
+840. html.push(' <span class="text__promise">의무약정 ' + arrGMDSpec[moreImgIndex]["TXT3"] + '개월</span>' + '\r\n');
+841. } else {
+842. html.push(' <del>' + arrGMDSpec[moreImgIndex]["DIV2"] + '</del>' + '\r\n');
+843. html.push(' <strong>' + arrGMDSpec[moreImgIndex]["TXT2"] + '</strong>' + '\r\n');
+844. }
+845. html.push(' </div>' + '\r\n');
+846.
+847. html.push('</li>' + '\r\n');
+848. }
+849.
+850. document.getElementById("ulMDListLayer").innerHTML = html.join("");
+851. }
+852. }
+853.
+854. function initMoreMDLayer() {
+855. showMoreMDLayer(0);
+856. if (imgCnt <= 6) {
+857. if (imgCnt <= 3) {
+858. $j("#divMDSubLayer").addClass("layer-con-3");
+859. }
+860. document.getElementById("GMDSpecPrev").style.display = "none";
+861. document.getElementById("GMDSpecNext").style.display = "none";
+862. }
+863. }
+864.
+865. document.write("<div style=\"display:none;\"><img id=\"ad_check_img\" name=\"ad_check_img\" width=\"0\" height=\"0\" border=\"0\" alt=\"빈이미지\"></div>");
+866. function check_ad_link(sBidBannerAdNo, sBidAdNo, sLinkUrl) {
+867. GoSNAChannel('CCP0A015','', 'stat');
+868. document.getElementById("ad_check_img").src = "http://adlog.gmarket.co.kr/adcheck.html?bid_ad_no=" + sBidAdNo + "&bid_banner_ad_no=" + sBidBannerAdNo + "&ad_type=2";
+869. document.location.href = sLinkUrl;
+870. }
+871. </script>
+872. </div>
+873. <!-- End [Region3] -->
+874. <!-- Begin [Region7] -->
+875. <!-- Floating Banner -->
+876. <div class="floating_wrap">
+877. <div class="floating-banner" id="divFloating">
+878.
+879. </div>
+880. </div>
+881. <!-- //Floating Banner -->
+882. <!-- End [Region7] -->
+883. <h3 class="title">노트북/데스크탑 맞춤 AI픽! <em class="ad" title="AI매출업 광고를 구매한 상품으로 AI추천 및 카테고리 연관도 기준으로 추천됩니다.">광고</em></h3>
+884. <div id="plusItem" class="plus-goods">
+885. <div id="plus-items-cont">
+886. <ul>
+887. <li>
+888. <div class="img">
+889. <a href="javascript:checkAdLink('0','http://item.gmarket.co.kr/item?goodscode=2470865962&pos_shop_cd=GE&pos_class_cd=100000002&pos_class_kind=L','_blank','2','AdCheckForm'); GoSNAChannel('CCP0A017_1', '', 'stat');pdsClickLog('200000698', 'Item', {'goodsCode': '2470865962', 'Groupno': 1});" onClick=javascript:sendAtsClickUrl('http://ats.gmarket.co.kr/ra/clk?r=dmVuZG9yPTEzMSZiaWRfdmVuZG9yPTEzMSZzZWxsZXJfaWQ9bmxhbmQmaXRlbV9ubz0yNDcwODY1OTYyJnJhX2dyb3VwX25vPTI2MzAmc2VsbGVyX2N1c3Rfbm89MTAxNTI0NjkwJm1hc3Rlcl9pZD0xNzQzOSZyZXFfaWQ9MDU3MjNiYTktYTM1YS00YjgxLWI3YmMtYTE5NmM3NWI5YjI1JmltcF9pZD1jMjQwOTU1Yy05YzA0LTRiMDYtOGE1ZS02MmVjY2Y1ZWY5YjMma2V5d29yZD0mY2d1aWQ9JnBndWlkPSZzZ3VpZD0mZXRjX2luZm89JTdCJTIyYWJUZXN0Q29kZSUyMiUzQW51bGwlMkMlMjJ0ZXN0QnVja2V0TnVtJTIyJTNBMTUlMkMlMjJhZFNldEdyb3VwQ29kZSUyMiUzQTU5JTJDJTIyamFlaHVJZCUyMiUzQSUyMiUyMiU3RA==&ref=http%253a%252f%252fcategory.gmarket.co.kr%252flistview%252fL100000002.aspx')><img src="http://gdimg.gmarket.co.kr/2470865962/still/120" onError="this.src='http://image.gmarket.co.kr/challenge/neo_image/no_image.gif';" width="120" height="120" alt="램 32G 만들기(16G+16G) (15UD50T-GX5JK 행사전용혜택)" />
+890. </a>
+891. </div>
+892. <div class="name"><a href="javascript:checkAdLink('0','http://item.gmarket.co.kr/item?goodscode=2470865962&pos_shop_cd=GE&pos_class_cd=100000002&pos_class_kind=L','_blank','2','AdCheckForm'); GoSNAChannel('CCP0A017_1', '', 'stat');pdsClickLog('200000698', 'Item', {'goodsCode': '2470865962', 'Groupno': 1});" onClick=javascript:sendAtsClickUrl('http://ats.gmarket.co.kr/ra/clk?r=dmVuZG9yPTEzMSZiaWRfdmVuZG9yPTEzMSZzZWxsZXJfaWQ9bmxhbmQmaXRlbV9ubz0yNDcwODY1OTYyJnJhX2dyb3VwX25vPTI2MzAmc2VsbGVyX2N1c3Rfbm89MTAxNTI0NjkwJm1hc3Rlcl9pZD0xNzQzOSZyZXFfaWQ9MDU3MjNiYTktYTM1YS00YjgxLWI3YmMtYTE5NmM3NWI5YjI1JmltcF9pZD1jMjQwOTU1Yy05YzA0LTRiMDYtOGE1ZS02MmVjY2Y1ZWY5YjMma2V5d29yZD0mY2d1aWQ9JnBndWlkPSZzZ3VpZD0mZXRjX2luZm89JTdCJTIyYWJUZXN0Q29kZSUyMiUzQW51bGwlMkMlMjJ0ZXN0QnVja2V0TnVtJTIyJTNBMTUlMkMlMjJhZFNldEdyb3VwQ29kZSUyMiUzQTU5JTJDJTIyamFlaHVJZCUyMiUzQSUyMiUyMiU3RA==&ref=http%253a%252f%252fcategory.gmarket.co.kr%252flistview%252fL100000002.aspx')>램 32G 만들기(16G+16G) (15UD50T-GX5JK 행사전용혜택)</a></div>
+893. <div class="price"><strong><span>49,000</span>원</strong></div>
+894. </li>
+895. <li>
+896. <div class="img">
+897. <a href="javascript:checkAdLink('0','http://item.gmarket.co.kr/item?goodscode=2527333410&pos_shop_cd=GE&pos_class_cd=100000002&pos_class_kind=L','_blank','2','AdCheckForm'); GoSNAChannel('CCP0A017_2', '', 'stat');pdsClickLog('200000698', 'Item', {'goodsCode': '2527333410', 'Groupno': 1});" onClick=javascript:sendAtsClickUrl('http://ats.gmarket.co.kr/ra/clk?r=dmVuZG9yPTEzMSZiaWRfdmVuZG9yPTEzMSZzZWxsZXJfaWQ9bmFheWFuYTg3Jml0ZW1fbm89MjUyNzMzMzQxMCZyYV9ncm91cF9ubz0yNzAmc2VsbGVyX2N1c3Rfbm89MTI1NjI3OTUyJm1hc3Rlcl9pZD0yMjY1OTYmcmVxX2lkPTA1NzIzYmE5LWEzNWEtNGI4MS1iN2JjLWExOTZjNzViOWIyNSZpbXBfaWQ9ZDIyNzU3ZTQtNTJiNi00MzM3LWI1OWItODZkYjc3Y2IyNDEwJmtleXdvcmQ9JmNndWlkPSZwZ3VpZD0mc2d1aWQ9JmV0Y19pbmZvPSU3QiUyMmFiVGVzdENvZGUlMjIlM0FudWxsJTJDJTIydGVzdEJ1Y2tldE51bSUyMiUzQTE1JTJDJTIyYWRTZXRHcm91cENvZGUlMjIlM0E1OSUyQyUyMmphZWh1SWQlMjIlM0ElMjIlMjIlN0Q=&ref=http%253a%252f%252fcategory.gmarket.co.kr%252flistview%252fL100000002.aspx')><img src="http://gdimg.gmarket.co.kr/2527333410/still/120" onError="this.src='http://image.gmarket.co.kr/challenge/neo_image/no_image.gif';" width="120" height="120" alt="노트북 베이직북 14 3세대 BB1422SS 윈도우11 8GB 256GB 사무용 인강용 포토샵 코딩용 대학생 가벼운 노트북" />
+898. </a>
+899. </div>
+900. <div class="name"><a href="javascript:checkAdLink('0','http://item.gmarket.co.kr/item?goodscode=2527333410&pos_shop_cd=GE&pos_class_cd=100000002&pos_class_kind=L','_blank','2','AdCheckForm'); GoSNAChannel('CCP0A017_2', '', 'stat');pdsClickLog('200000698', 'Item', {'goodsCode': '2527333410', 'Groupno': 1});" onClick=javascript:sendAtsClickUrl('http://ats.gmarket.co.kr/ra/clk?r=dmVuZG9yPTEzMSZiaWRfdmVuZG9yPTEzMSZzZWxsZXJfaWQ9bmFheWFuYTg3Jml0ZW1fbm89MjUyNzMzMzQxMCZyYV9ncm91cF9ubz0yNzAmc2VsbGVyX2N1c3Rfbm89MTI1NjI3OTUyJm1hc3Rlcl9pZD0yMjY1OTYmcmVxX2lkPTA1NzIzYmE5LWEzNWEtNGI4MS1iN2JjLWExOTZjNzViOWIyNSZpbXBfaWQ9ZDIyNzU3ZTQtNTJiNi00MzM3LWI1OWItODZkYjc3Y2IyNDEwJmtleXdvcmQ9JmNndWlkPSZwZ3VpZD0mc2d1aWQ9JmV0Y19pbmZvPSU3QiUyMmFiVGVzdENvZGUlMjIlM0FudWxsJTJDJTIydGVzdEJ1Y2tldE51bSUyMiUzQTE1JTJDJTIyYWRTZXRHcm91cENvZGUlMjIlM0E1OSUyQyUyMmphZWh1SWQlMjIlM0ElMjIlMjIlN0Q=&ref=http%253a%252f%252fcategory.gmarket.co.kr%252flistview%252fL100000002.aspx')>노트북 베이직북 14 3세대 BB1422SS 윈도우11 8GB 256GB 사무용 인강용 포토샵 코딩용 대학생 가벼운 노트북</a></div>
+901. <div class="price"><strong><span>398,000</span>원</strong></div>
+902. </li>
+903. <li>
+904. <div class="img">
+905. <a href="javascript:checkAdLink('0','http://item.gmarket.co.kr/item?goodscode=2847664143&pos_shop_cd=GE&pos_class_cd=100000002&pos_class_kind=L','_blank','2','AdCheckForm'); GoSNAChannel('CCP0A017_3', '', 'stat');pdsClickLog('200000698', 'Item', {'goodsCode': '2847664143', 'Groupno': 1});" onClick=javascript:sendAtsClickUrl('http://ats.gmarket.co.kr/ra/clk?r=dmVuZG9yPTEzMSZiaWRfdmVuZG9yPTEzMSZzZWxsZXJfaWQ9bG9wcHljbmMmaXRlbV9ubz0yODQ3NjY0MTQzJnJhX2dyb3VwX25vPTEyJnNlbGxlcl9jdXN0X25vPTEyMDU2Mjg0NiZtYXN0ZXJfaWQ9MTQ3NTcmcmVxX2lkPTA1NzIzYmE5LWEzNWEtNGI4MS1iN2JjLWExOTZjNzViOWIyNSZpbXBfaWQ9ZWYyOTA1NTItYjc3OC00NTNkLWFiMzAtMDk5YjUzNjAxZGVlJmtleXdvcmQ9JmNndWlkPSZwZ3VpZD0mc2d1aWQ9JmV0Y19pbmZvPSU3QiUyMmFiVGVzdENvZGUlMjIlM0FudWxsJTJDJTIydGVzdEJ1Y2tldE51bSUyMiUzQTE1JTJDJTIyYWRTZXRHcm91cENvZGUlMjIlM0E1OSUyQyUyMmphZWh1SWQlMjIlM0ElMjIlMjIlN0Q=&ref=http%253a%252f%252fcategory.gmarket.co.kr%252flistview%252fL100000002.aspx')><img src="http://gdimg.gmarket.co.kr/2847664143/still/120" onError="this.src='http://image.gmarket.co.kr/challenge/neo_image/no_image.gif';" width="120" height="120" alt="LG 울트라 PC 15UD40R-GX56K 63만특가+카드지갑한정증정 라이젠 새학기 학생용 대학생 사무용 가성비노트북" />
+906. </a>
+907. </div>
+908. <div class="name"><a href="javascript:checkAdLink('0','http://item.gmarket.co.kr/item?goodscode=2847664143&pos_shop_cd=GE&pos_class_cd=100000002&pos_class_kind=L','_blank','2','AdCheckForm'); GoSNAChannel('CCP0A017_3', '', 'stat');pdsClickLog('200000698', 'Item', {'goodsCode': '2847664143', 'Groupno': 1});" onClick=javascript:sendAtsClickUrl('http://ats.gmarket.co.kr/ra/clk?r=dmVuZG9yPTEzMSZiaWRfdmVuZG9yPTEzMSZzZWxsZXJfaWQ9bG9wcHljbmMmaXRlbV9ubz0yODQ3NjY0MTQzJnJhX2dyb3VwX25vPTEyJnNlbGxlcl9jdXN0X25vPTEyMDU2Mjg0NiZtYXN0ZXJfaWQ9MTQ3NTcmcmVxX2lkPTA1NzIzYmE5LWEzNWEtNGI4MS1iN2JjLWExOTZjNzViOWIyNSZpbXBfaWQ9ZWYyOTA1NTItYjc3OC00NTNkLWFiMzAtMDk5YjUzNjAxZGVlJmtleXdvcmQ9JmNndWlkPSZwZ3VpZD0mc2d1aWQ9JmV0Y19pbmZvPSU3QiUyMmFiVGVzdENvZGUlMjIlM0FudWxsJTJDJTIydGVzdEJ1Y2tldE51bSUyMiUzQTE1JTJDJTIyYWRTZXRHcm91cENvZGUlMjIlM0E1OSUyQyUyMmphZWh1SWQlMjIlM0ElMjIlMjIlN0Q=&ref=http%253a%252f%252fcategory.gmarket.co.kr%252flistview%252fL100000002.aspx')>LG 울트라 PC 15UD40R-GX56K 63만특가+카드지갑한정증정 라이젠 새학기 학생용 대학생 사무용 가성비노트북</a></div>
+909. <div class="price"><strong><span>639,000</span>원</strong></div>
+910. </li>
+911. <li>
+912. <div class="img">
+913. <a href="javascript:checkAdLink('0','http://item.gmarket.co.kr/item?goodscode=2970963701&pos_shop_cd=GE&pos_class_cd=100000002&pos_class_kind=L','_blank','2','AdCheckForm'); GoSNAChannel('CCP0A017_4', '', 'stat');pdsClickLog('200000698', 'Item', {'goodsCode': '2970963701', 'Groupno': 1});" onClick=javascript:sendAtsClickUrl('http://ats.gmarket.co.kr/ra/clk?r=dmVuZG9yPTEzMSZiaWRfdmVuZG9yPTEzMSZzZWxsZXJfaWQ9Y29td2lubHRkJml0ZW1fbm89Mjk3MDk2MzcwMSZyYV9ncm91cF9ubz0zNTMwMSZzZWxsZXJfY3VzdF9ubz0xMTg3NjUzMjMmbWFzdGVyX2lkPTQyMDgmcmVxX2lkPTA1NzIzYmE5LWEzNWEtNGI4MS1iN2JjLWExOTZjNzViOWIyNSZpbXBfaWQ9MjYwOTY3N2QtMWVjYy00YWM0LWI4ZTMtYWVhMWRjYWEyZWMxJmtleXdvcmQ9JmNndWlkPSZwZ3VpZD0mc2d1aWQ9JmV0Y19pbmZvPSU3QiUyMmFiVGVzdENvZGUlMjIlM0FudWxsJTJDJTIydGVzdEJ1Y2tldE51bSUyMiUzQTE1JTJDJTIyYWRTZXRHcm91cENvZGUlMjIlM0E1OSUyQyUyMmphZWh1SWQlMjIlM0ElMjIlMjIlN0Q=&ref=http%253a%252f%252fcategory.gmarket.co.kr%252flistview%252fL100000002.aspx')><img src="http://gdimg.gmarket.co.kr/2970963701/still/120" onError="this.src='http://image.gmarket.co.kr/challenge/neo_image/no_image.gif';" width="120" height="120" alt="삼성노트북 NT 370E5J win10 SSD128GB RAM8GB 이벤트 특가 한정수량" />
+914. </a>
+915. </div>
+916. <div class="name"><a href="javascript:checkAdLink('0','http://item.gmarket.co.kr/item?goodscode=2970963701&pos_shop_cd=GE&pos_class_cd=100000002&pos_class_kind=L','_blank','2','AdCheckForm'); GoSNAChannel('CCP0A017_4', '', 'stat');pdsClickLog('200000698', 'Item', {'goodsCode': '2970963701', 'Groupno': 1});" onClick=javascript:sendAtsClickUrl('http://ats.gmarket.co.kr/ra/clk?r=dmVuZG9yPTEzMSZiaWRfdmVuZG9yPTEzMSZzZWxsZXJfaWQ9Y29td2lubHRkJml0ZW1fbm89Mjk3MDk2MzcwMSZyYV9ncm91cF9ubz0zNTMwMSZzZWxsZXJfY3VzdF9ubz0xMTg3NjUzMjMmbWFzdGVyX2lkPTQyMDgmcmVxX2lkPTA1NzIzYmE5LWEzNWEtNGI4MS1iN2JjLWExOTZjNzViOWIyNSZpbXBfaWQ9MjYwOTY3N2QtMWVjYy00YWM0LWI4ZTMtYWVhMWRjYWEyZWMxJmtleXdvcmQ9JmNndWlkPSZwZ3VpZD0mc2d1aWQ9JmV0Y19pbmZvPSU3QiUyMmFiVGVzdENvZGUlMjIlM0FudWxsJTJDJTIydGVzdEJ1Y2tldE51bSUyMiUzQTE1JTJDJTIyYWRTZXRHcm91cENvZGUlMjIlM0E1OSUyQyUyMmphZWh1SWQlMjIlM0ElMjIlMjIlN0Q=&ref=http%253a%252f%252fcategory.gmarket.co.kr%252flistview%252fL100000002.aspx')>삼성노트북 NT 370E5J win10 SSD128GB RAM8GB 이벤트 특가 한정수량</a></div>
+917. <div class="price"><strong><span>199,000</span>원</strong></div>
+918. </li>
+919. <li>
+920. <div class="img">
+921. <a href="javascript:checkAdLink('0','http://item.gmarket.co.kr/item?goodscode=3214048585&pos_shop_cd=GE&pos_class_cd=100000002&pos_class_kind=L','_blank','2','AdCheckForm'); GoSNAChannel('CCP0A017_5', '', 'stat');pdsClickLog('200000698', 'Item', {'goodsCode': '3214048585', 'Groupno': 1});" onClick=javascript:sendAtsClickUrl('http://ats.gmarket.co.kr/ra/clk?r=dmVuZG9yPTEzMSZiaWRfdmVuZG9yPTEzMSZzZWxsZXJfaWQ9bmFheWFuYTg3Jml0ZW1fbm89MzIxNDA0ODU4NSZyYV9ncm91cF9ubz0yNzAmc2VsbGVyX2N1c3Rfbm89MTI1NjI3OTUyJm1hc3Rlcl9pZD0yMjY1OTYmcmVxX2lkPTA1NzIzYmE5LWEzNWEtNGI4MS1iN2JjLWExOTZjNzViOWIyNSZpbXBfaWQ9ZDI2YWM1ZWYtNzcxNy00ZWEzLThjYWQtYzg1NzE5NGU3ZjFmJmtleXdvcmQ9JmNndWlkPSZwZ3VpZD0mc2d1aWQ9JmV0Y19pbmZvPSU3QiUyMmFiVGVzdENvZGUlMjIlM0FudWxsJTJDJTIydGVzdEJ1Y2tldE51bSUyMiUzQTE1JTJDJTIyYWRTZXRHcm91cENvZGUlMjIlM0E1OSUyQyUyMmphZWh1SWQlMjIlM0ElMjIlMjIlN0Q=&ref=http%253a%252f%252fcategory.gmarket.co.kr%252flistview%252fL100000002.aspx')><img src="http://gdimg.gmarket.co.kr/3214048585/still/120" onError="this.src='http://image.gmarket.co.kr/challenge/neo_image/no_image.gif';" width="120" height="120" alt="베이직북14 프로 WIN11 윈도우11 i5 고사양 8GB/256GB 사무용 인강용 영상편집 포토샵 게이밍 코딩용 노트북" />
+922. </a>
+923. </div>
+924. <div class="name"><a href="javascript:checkAdLink('0','http://item.gmarket.co.kr/item?goodscode=3214048585&pos_shop_cd=GE&pos_class_cd=100000002&pos_class_kind=L','_blank','2','AdCheckForm'); GoSNAChannel('CCP0A017_5', '', 'stat');pdsClickLog('200000698', 'Item', {'goodsCode': '3214048585', 'Groupno': 1});" onClick=javascript:sendAtsClickUrl('http://ats.gmarket.co.kr/ra/clk?r=dmVuZG9yPTEzMSZiaWRfdmVuZG9yPTEzMSZzZWxsZXJfaWQ9bmFheWFuYTg3Jml0ZW1fbm89MzIxNDA0ODU4NSZyYV9ncm91cF9ubz0yNzAmc2VsbGVyX2N1c3Rfbm89MTI1NjI3OTUyJm1hc3Rlcl9pZD0yMjY1OTYmcmVxX2lkPTA1NzIzYmE5LWEzNWEtNGI4MS1iN2JjLWExOTZjNzViOWIyNSZpbXBfaWQ9ZDI2YWM1ZWYtNzcxNy00ZWEzLThjYWQtYzg1NzE5NGU3ZjFmJmtleXdvcmQ9JmNndWlkPSZwZ3VpZD0mc2d1aWQ9JmV0Y19pbmZvPSU3QiUyMmFiVGVzdENvZGUlMjIlM0FudWxsJTJDJTIydGVzdEJ1Y2tldE51bSUyMiUzQTE1JTJDJTIyYWRTZXRHcm91cENvZGUlMjIlM0E1OSUyQyUyMmphZWh1SWQlMjIlM0ElMjIlMjIlN0Q=&ref=http%253a%252f%252fcategory.gmarket.co.kr%252flistview%252fL100000002.aspx')>베이직북14 프로 WIN11 윈도우11 i5 고사양 8GB/256GB 사무용 인강용 영상편집 포토샵 게이밍 코딩용 노트북</a></div>
+925. <div class="price"><strong><span>588,000</span>원</strong></div>
+926. </li>
+927. <li>
+928. <div class="img">
+929. <a href="javascript:checkAdLink('0','http://item.gmarket.co.kr/item?goodscode=3411809690&pos_shop_cd=GE&pos_class_cd=100000002&pos_class_kind=L','_blank','2','AdCheckForm'); GoSNAChannel('CCP0A017_6', '', 'stat');pdsClickLog('200000698', 'Item', {'goodsCode': '3411809690', 'Groupno': 1});" onClick=javascript:sendAtsClickUrl('http://ats.gmarket.co.kr/ra/clk?r=dmVuZG9yPTEzMSZiaWRfdmVuZG9yPTEzMSZzZWxsZXJfaWQ9dG50aW5mbyZpdGVtX25vPTM0MTE4MDk2OTAmcmFfZ3JvdXBfbm89OTkxNCZzZWxsZXJfY3VzdF9ubz0xMDMxNDk5MjImbWFzdGVyX2lkPTIzNTM4JnJlcV9pZD0wNTcyM2JhOS1hMzVhLTRiODEtYjdiYy1hMTk2Yzc1YjliMjUmaW1wX2lkPThkYmIxYjU0LWMwMDYtNGZiMC1hMWMyLTAwYjVjYjA3M2I1YiZrZXl3b3JkPSZjZ3VpZD0mcGd1aWQ9JnNndWlkPSZldGNfaW5mbz0lN0IlMjJhYlRlc3RDb2RlJTIyJTNBbnVsbCUyQyUyMnRlc3RCdWNrZXROdW0lMjIlM0ExNSUyQyUyMmFkU2V0R3JvdXBDb2RlJTIyJTNBNTklMkMlMjJqYWVodUlkJTIyJTNBJTIyJTIyJTdE&ref=http%253a%252f%252fcategory.gmarket.co.kr%252flistview%252fL100000002.aspx')><img src="http://gdimg.gmarket.co.kr/3411809690/still/120" onError="this.src='http://image.gmarket.co.kr/challenge/neo_image/no_image.gif';" width="120" height="120" alt="LG그램 14ZD90S-GX56K Ultra5 16GB 가성비 대학생 노트북" />
+930. </a>
+931. </div>
+932. <div class="name"><a href="javascript:checkAdLink('0','http://item.gmarket.co.kr/item?goodscode=3411809690&pos_shop_cd=GE&pos_class_cd=100000002&pos_class_kind=L','_blank','2','AdCheckForm'); GoSNAChannel('CCP0A017_6', '', 'stat');pdsClickLog('200000698', 'Item', {'goodsCode': '3411809690', 'Groupno': 1});" onClick=javascript:sendAtsClickUrl('http://ats.gmarket.co.kr/ra/clk?r=dmVuZG9yPTEzMSZiaWRfdmVuZG9yPTEzMSZzZWxsZXJfaWQ9dG50aW5mbyZpdGVtX25vPTM0MTE4MDk2OTAmcmFfZ3JvdXBfbm89OTkxNCZzZWxsZXJfY3VzdF9ubz0xMDMxNDk5MjImbWFzdGVyX2lkPTIzNTM4JnJlcV9pZD0wNTcyM2JhOS1hMzVhLTRiODEtYjdiYy1hMTk2Yzc1YjliMjUmaW1wX2lkPThkYmIxYjU0LWMwMDYtNGZiMC1hMWMyLTAwYjVjYjA3M2I1YiZrZXl3b3JkPSZjZ3VpZD0mcGd1aWQ9JnNndWlkPSZldGNfaW5mbz0lN0IlMjJhYlRlc3RDb2RlJTIyJTNBbnVsbCUyQyUyMnRlc3RCdWNrZXROdW0lMjIlM0ExNSUyQyUyMmFkU2V0R3JvdXBDb2RlJTIyJTNBNTklMkMlMjJqYWVodUlkJTIyJTNBJTIyJTIyJTdE&ref=http%253a%252f%252fcategory.gmarket.co.kr%252flistview%252fL100000002.aspx')>LG그램 14ZD90S-GX56K Ultra5 16GB 가성비 대학생 노트북</a></div>
+933. <div class="price"><strong><span>1,199,000</span>원</strong></div>
+934. </li>
+935. <img src="http://ats.gmarket.co.kr/ra/imp?r=aW1wX2lkPWMyNDA5NTVjLTljMDQtNGIwNi04YTVlLTYyZWNjZjVlZjliMyZzZWxsZXJfaWQ9bmxhbmQmaXRlbV9ubz0yNDcwODY1OTYyJnZlbmRvcj0xMzEmcmVxX2lkPTA1NzIzYmE5LWEzNWEtNGI4MS1iN2JjLWExOTZjNzViOWIyNSZzaXRlX2lkPTImYWRfZ3JvdXBfaWQ9MjYzMCZtYXN0ZXJfaWQ9MTc0MzkmY2d1aWQ9JnBndWlkPSZzZ3VpZD0mZXRjX2luZm89JTdCJTIyYWJUZXN0Q29kZSUyMiUzQW51bGwlMkMlMjJ0ZXN0QnVja2V0TnVtJTIyJTNBMTUlMkMlMjJhZFNldEdyb3VwQ29kZSUyMiUzQTU5JTJDJTIyamFlaHVJZCUyMiUzQSUyMiUyMiU3RA==&ref=http%253a%252f%252fcategory.gmarket.co.kr%252flistview%252fL100000002.aspx" style="display:none;" width="0" height="0" alt="빈이미지" />
+936. <img src="http://ats.gmarket.co.kr/ra/imp?r=aW1wX2lkPWQyMjc1N2U0LTUyYjYtNDMzNy1iNTliLTg2ZGI3N2NiMjQxMCZzZWxsZXJfaWQ9bmFheWFuYTg3Jml0ZW1fbm89MjUyNzMzMzQxMCZ2ZW5kb3I9MTMxJnJlcV9pZD0wNTcyM2JhOS1hMzVhLTRiODEtYjdiYy1hMTk2Yzc1YjliMjUmc2l0ZV9pZD0yJmFkX2dyb3VwX2lkPTI3MCZtYXN0ZXJfaWQ9MjI2NTk2JmNndWlkPSZwZ3VpZD0mc2d1aWQ9JmV0Y19pbmZvPSU3QiUyMmFiVGVzdENvZGUlMjIlM0FudWxsJTJDJTIydGVzdEJ1Y2tldE51bSUyMiUzQTE1JTJDJTIyYWRTZXRHcm91cENvZGUlMjIlM0E1OSUyQyUyMmphZWh1SWQlMjIlM0ElMjIlMjIlN0Q=&ref=http%253a%252f%252fcategory.gmarket.co.kr%252flistview%252fL100000002.aspx" style="display:none;" width="0" height="0" alt="빈이미지" />
+937. <img src="http://ats.gmarket.co.kr/ra/imp?r=aW1wX2lkPWVmMjkwNTUyLWI3NzgtNDUzZC1hYjMwLTA5OWI1MzYwMWRlZSZzZWxsZXJfaWQ9bG9wcHljbmMmaXRlbV9ubz0yODQ3NjY0MTQzJnZlbmRvcj0xMzEmcmVxX2lkPTA1NzIzYmE5LWEzNWEtNGI4MS1iN2JjLWExOTZjNzViOWIyNSZzaXRlX2lkPTImYWRfZ3JvdXBfaWQ9MTImbWFzdGVyX2lkPTE0NzU3JmNndWlkPSZwZ3VpZD0mc2d1aWQ9JmV0Y19pbmZvPSU3QiUyMmFiVGVzdENvZGUlMjIlM0FudWxsJTJDJTIydGVzdEJ1Y2tldE51bSUyMiUzQTE1JTJDJTIyYWRTZXRHcm91cENvZGUlMjIlM0E1OSUyQyUyMmphZWh1SWQlMjIlM0ElMjIlMjIlN0Q=&ref=http%253a%252f%252fcategory.gmarket.co.kr%252flistview%252fL100000002.aspx" style="display:none;" width="0" height="0" alt="빈이미지" />
+938. <img src="http://ats.gmarket.co.kr/ra/imp?r=aW1wX2lkPTI2MDk2NzdkLTFlY2MtNGFjNC1iOGUzLWFlYTFkY2FhMmVjMSZzZWxsZXJfaWQ9Y29td2lubHRkJml0ZW1fbm89Mjk3MDk2MzcwMSZ2ZW5kb3I9MTMxJnJlcV9pZD0wNTcyM2JhOS1hMzVhLTRiODEtYjdiYy1hMTk2Yzc1YjliMjUmc2l0ZV9pZD0yJmFkX2dyb3VwX2lkPTM1MzAxJm1hc3Rlcl9pZD00MjA4JmNndWlkPSZwZ3VpZD0mc2d1aWQ9JmV0Y19pbmZvPSU3QiUyMmFiVGVzdENvZGUlMjIlM0FudWxsJTJDJTIydGVzdEJ1Y2tldE51bSUyMiUzQTE1JTJDJTIyYWRTZXRHcm91cENvZGUlMjIlM0E1OSUyQyUyMmphZWh1SWQlMjIlM0ElMjIlMjIlN0Q=&ref=http%253a%252f%252fcategory.gmarket.co.kr%252flistview%252fL100000002.aspx" style="display:none;" width="0" height="0" alt="빈이미지" />
+939. <img src="http://ats.gmarket.co.kr/ra/imp?r=aW1wX2lkPWQyNmFjNWVmLTc3MTctNGVhMy04Y2FkLWM4NTcxOTRlN2YxZiZzZWxsZXJfaWQ9bmFheWFuYTg3Jml0ZW1fbm89MzIxNDA0ODU4NSZ2ZW5kb3I9MTMxJnJlcV9pZD0wNTcyM2JhOS1hMzVhLTRiODEtYjdiYy1hMTk2Yzc1YjliMjUmc2l0ZV9pZD0yJmFkX2dyb3VwX2lkPTI3MCZtYXN0ZXJfaWQ9MjI2NTk2JmNndWlkPSZwZ3VpZD0mc2d1aWQ9JmV0Y19pbmZvPSU3QiUyMmFiVGVzdENvZGUlMjIlM0FudWxsJTJDJTIydGVzdEJ1Y2tldE51bSUyMiUzQTE1JTJDJTIyYWRTZXRHcm91cENvZGUlMjIlM0E1OSUyQyUyMmphZWh1SWQlMjIlM0ElMjIlMjIlN0Q=&ref=http%253a%252f%252fcategory.gmarket.co.kr%252flistview%252fL100000002.aspx" style="display:none;" width="0" height="0" alt="빈이미지" />
+940. <img src="http://ats.gmarket.co.kr/ra/imp?r=aW1wX2lkPThkYmIxYjU0LWMwMDYtNGZiMC1hMWMyLTAwYjVjYjA3M2I1YiZzZWxsZXJfaWQ9dG50aW5mbyZpdGVtX25vPTM0MTE4MDk2OTAmdmVuZG9yPTEzMSZyZXFfaWQ9MDU3MjNiYTktYTM1YS00YjgxLWI3YmMtYTE5NmM3NWI5YjI1JnNpdGVfaWQ9MiZhZF9ncm91cF9pZD05OTE0Jm1hc3Rlcl9pZD0yMzUzOCZjZ3VpZD0mcGd1aWQ9JnNndWlkPSZldGNfaW5mbz0lN0IlMjJhYlRlc3RDb2RlJTIyJTNBbnVsbCUyQyUyMnRlc3RCdWNrZXROdW0lMjIlM0ExNSUyQyUyMmFkU2V0R3JvdXBDb2RlJTIyJTNBNTklMkMlMjJqYWVodUlkJTIyJTNBJTIyJTIyJTdE&ref=http%253a%252f%252fcategory.gmarket.co.kr%252flistview%252fL100000002.aspx" style="display:none;" width="0" height="0" alt="빈이미지" />
+941. </ul>
+942. </div>
+943. <div class="link"><a href="javascript:fncApplyCategory();GoSNAChannel('CCP0A016', '', 'stat');">신청하기</a></div>
+944. </div>
+945. <!-- Begin [Region4] -->
+946. <div class="promotion-banner" id="divThemeShop" style="display:none;">
+947. <script language="javascript">
+948. function initThemeShop() {
+949. try {
+950. if (arrThemeshopBn.length > 0) {
+951. document.getElementById("divThemeShop").innerHTML = arrThemeshopBn[ThemeshopRanNo]["img"];
+952. document.getElementById("divThemeShop").style.display = "";
+953. } else {
+954. document.getElementById("divThemeShop").style.display = "none";
+955. }
+956. } catch (e) { }
+957. }
+958.
+959. initThemeShop();
+960. </script>
+961. </div>
+962. <!-- End [Region4] -->
+963. <!-- Begin [Region5] -->
+964. <!-- End [Region5] -->
+965. <!-- Begin [Region9] -->
+966. <div id="cppiframeWrap" class="season-iframe">
+967. <div id="cppiframeHtml" style="display:none;"></div>
+968.
+969. <div id="cppiframeItemTab" class="season-list style-col" style="display:none;">
+970. <div class="tab">
+971. <ul>
+972. <li class="first"><div id="cppiframeItemTab1"></div></li>
+973. <li><div id="cppiframeItemTab2"></div></li>
+974. <li class="last"><div id="cppiframeItemTab3"></div></li>
+975. </ul>
+976. </div>
+977.
+978. <div class="list">
+979.
+980. <ul id="cppiframeItemTabItem">
+981. </ul>
+982. </div>
+983. </div>
+984. <ul id="cppiframeItemBanner" class="season-min-banner2" style="display:none;">
+985. <li id="cppiframeItemBanner1"></li>
+986. <li id="cppiframeItemBanner2" class="center"></li>
+987. <li id="cppiframeItemBanner3"></li>
+988. </ul>
+989.
+990. <div id="cppiframeBannerTop" class="season-ad" style="display:none;">
+991. <div class="left">
+992. <a id="cppiframeBannerLeftUr1"><img id="cppiframeBannerLeftImg" alt="" /></a>
+993. <ul id="cppiframeBannerLeftTab" class="tab">
+994. </ul>
+995. </div>
+996. <div class="right">
+997. <a id="cppiframeBannerRightUr1"><img id="cppiframeBannerRightImg" alt="" /></a>
+998. <ul id="cppiframeBannerRightTab" class="tab">
+999. </ul>
+1000. </div>
+1001. </div>
+1002. <ul id="cppiframeBannerBot" class="season-min-banner" style="display:none;">
+1003. <li id="cppiframeBannerBot1"></li>
+1004. <li id="cppiframeBannerBot2"></li>
+1005. <li id="cppiframeBannerBot3" class="last"></li>
+1006. </ul>
+1007. </div>
+1008. <script language="javascript" type="text/javascript">
+1009. initCppBanner();
+1010. </script>
+1011. <!-- End [Region9] -->
+1012. <!-- Begin [Region6] -->
+1013. <h3 id = "categoryBestTitle" class="title">노트북/데스크탑 인기상품</h3>
+1014. <div class="best-classifieds">
+1015. <div class="best-list">
+1016. <ul id="cppLargeCategoryBest">
+1017.
+1018. <li>
+1019. <div class="best-num num1">1</div>
+1020. <div class="img">
+1021. <a href="#">
+1022. <img src="http://image.gmkt.kr/challenge/neo_image/no_image.gif" alt="">
+1023. </a>
+1024. </div>
+1025. <div class="name">
+1026. <a href="#"></a>
+1027. </div>
+1028. <div class="price">
+1029. <del></del>
+1030. <strong></strong>
+1031. </div>
+1032. </li>
+1033.
+1034. <li>
+1035. <div class="best-num num2">2</div>
+1036. <div class="img">
+1037. <a href="#">
+1038. <img src="http://image.gmkt.kr/challenge/neo_image/no_image.gif" alt="">
+1039. </a>
+1040. </div>
+1041. <div class="name">
+1042. <a href="#"></a>
+1043. </div>
+1044. <div class="price">
+1045. <del></del>
+1046. <strong></strong>
+1047. </div>
+1048. </li>
+1049.
+1050. <li>
+1051. <div class="best-num num3">3</div>
+1052. <div class="img">
+1053. <a href="#">
+1054. <img src="http://image.gmkt.kr/challenge/neo_image/no_image.gif" alt="">
+1055. </a>
+1056. </div>
+1057. <div class="name">
+1058. <a href="#"></a>
+1059. </div>
+1060. <div class="price">
+1061. <del></del>
+1062. <strong></strong>
+1063. </div>
+1064. </li>
+1065.
+1066. <li>
+1067. <div class="best-num num4">4</div>
+1068. <div class="img">
+1069. <a href="#">
+1070. <img src="http://image.gmkt.kr/challenge/neo_image/no_image.gif" alt="">
+1071. </a>
+1072. </div>
+1073. <div class="name">
+1074. <a href="#"></a>
+1075. </div>
+1076. <div class="price">
+1077. <del></del>
+1078. <strong></strong>
+1079. </div>
+1080. </li>
+1081.
+1082. <li>
+1083. <div class="best-num num5">5</div>
+1084. <div class="img">
+1085. <a href="#">
+1086. <img src="http://image.gmkt.kr/challenge/neo_image/no_image.gif" alt="">
+1087. </a>
+1088. </div>
+1089. <div class="name">
+1090. <a href="#"></a>
+1091. </div>
+1092. <div class="price">
+1093. <del></del>
+1094. <strong></strong>
+1095. </div>
+1096. </li>
+1097.
+1098. <li>
+1099. <div class="best-num num6">6</div>
+1100. <div class="img">
+1101. <a href="#">
+1102. <img src="http://image.gmkt.kr/challenge/neo_image/no_image.gif" alt="">
+1103. </a>
+1104. </div>
+1105. <div class="name">
+1106. <a href="#"></a>
+1107. </div>
+1108. <div class="price">
+1109. <del></del>
+1110. <strong></strong>
+1111. </div>
+1112. </li>
+1113.
+1114. <li>
+1115. <div class="best-num num7">7</div>
+1116. <div class="img">
+1117. <a href="#">
+1118. <img src="http://image.gmkt.kr/challenge/neo_image/no_image.gif" alt="">
+1119. </a>
+1120. </div>
+1121. <div class="name">
+1122. <a href="#"></a>
+1123. </div>
+1124. <div class="price">
+1125. <del></del>
+1126. <strong></strong>
+1127. </div>
+1128. </li>
+1129.
+1130. <li>
+1131. <div class="best-num num8">8</div>
+1132. <div class="img">
+1133. <a href="#">
+1134. <img src="http://image.gmkt.kr/challenge/neo_image/no_image.gif" alt="">
+1135. </a>
+1136. </div>
+1137. <div class="name">
+1138. <a href="#"></a>
+1139. </div>
+1140. <div class="price">
+1141. <del></del>
+1142. <strong></strong>
+1143. </div>
+1144. </li>
+1145.
+1146. <li>
+1147. <div class="best-num num9">9</div>
+1148. <div class="img">
+1149. <a href="#">
+1150. <img src="http://image.gmkt.kr/challenge/neo_image/no_image.gif" alt="">
+1151. </a>
+1152. </div>
+1153. <div class="name">
+1154. <a href="#"></a>
+1155. </div>
+1156. <div class="price">
+1157. <del></del>
+1158. <strong></strong>
+1159. </div>
+1160. </li>
+1161.
+1162. <li>
+1163. <div class="best-num num10">10</div>
+1164. <div class="img">
+1165. <a href="#">
+1166. <img src="http://image.gmkt.kr/challenge/neo_image/no_image.gif" alt="">
+1167. </a>
+1168. </div>
+1169. <div class="name">
+1170. <a href="#"></a>
+1171. </div>
+1172. <div class="price">
+1173. <del></del>
+1174. <strong></strong>
+1175. </div>
+1176. </li>
+1177.
+1178. </ul>
+1179. </div>
+1180. </div>
+1181. <!-- End [Region6] -->
+1182.
+1183. </div>
+1184. <div class="divBlank"></div>
+1185. </div>
+1186. <!-- Begin [Region8] -->
+1187. <script language="javascript" type="text/javascript">
+1188. gInitHelper().addHandler(function () {
+1189. try {
+1190. initPopularKeyword();
+1191.
+1192. if (GSCnt_GBest < 9) {
+1193. document.getElementById("GBestDRprev").disabled = "true";
+1194. document.getElementById("GBestDRnext").disabled = "true";
+1195. }
+1196.
+1197. } catch (e) {}
+1198. });
+1199.
+1200. // G그룹별베스트, 카테고리별베스트란? bc9388 추가
+1201. function viewAbout() {
+1202. if(document.getElementById("gViewAbout").style.display == "none") document.getElementById("gViewAbout").style.display = "";
+1203. else if (document.getElementById("gViewAbout").style.display == "") document.getElementById("gViewAbout").style.display = "none";
+1204. };
+1205.
+1206. function hideAbout(){
+1207. document.getElementById("gViewAbout").style.display ="none";
+1208. };
+1209.
+1210. </script>
+1211. <!-- End [Region8] -->
+1212.
+1213. <script language="javascript" type="text/javascript">
+1214. function fncApplyPlus() {
+1215.
+1216. //document.location.href = "http://www.gmarket.co.kr/challenge/login.asp?URL=http://www.gmarket.co.kr/challenge/neo_sellerAd/ad_main.asp";
+1217. window.open("http://signin.gmarket.co.kr/login/login?url=http://www.gmarket.co.kr/challenge/neo_sellerAd/ad_main.asp","plusAdd","");
+1218.
+1219. }
+1220.
+1221. function fnOpenDangolSetPop(sCustNo) {
+1222.
+1223. alert("\n단골매장으로 등록하기 위해서는 로그인 되어 있어야 합니다.\n로그인 페이지로 이동합니다.\n");
+1224. document.location.href = "http://signin.gmarket.co.kr/login/login?url=" + document.location.href;
+1225. return;
+1226.
+1227. }
+1228.
+1229. function GoLink(linkurl) {
+1230. document.location.href = linkurl;
+1231. }
+1232.
+1233. function fncApplyCategory() {
+1234. window.open("https://marketinghub.esmplus.com/ad-guide/ai-sales/introduction.html?utm_source=TAC&utm_medium=banner&utm_campaign=top_ai");
+1235. }
+1236.
+1237.
+1238. //--개편 후에도 동일한 스크립트 로그 저장
+1239. document.write("<div style='display:none;'><img src='http://www.gmarket.co.kr/weblog/nethruscriptlog.html?script-url=http://category.gmarket.co.kr/listview/LList_wiselog.aspx?gdlc_cd=100000002" + document.location.search + "^^user-agent=" + navigator.userAgent + "^^referer=" + document.referrer + "^^cookie=" + document.cookie + "^^ width='0' height='0' border='0' alt='빈이미지'></div>");
+1240.
+1241. function sendAtsClickUrl(url) {
+1242. const img = document.createElement('img');
+1243. img.src = url;
+1244. }
+1245. </script>
+1246. <script language="javascript" type="text/javascript">
+1247. const GLBestProducts = [{"title":"LG그램 15ZD90RU-GX56K 혜택가 122만/15ZD90RU-GX54K/인텔i5/램16G/SSD 256GB/OS 미탑재 (ST)","url":"http://item.gmarket.co.kr/item?goodsCode=2945199475","image":"http://gdimg.gmarket.co.kr/2945199475/still/120","oprice":"1,280,200","price":"1,229,000","dutyperiod":""},{"title":"Slim 5 16IMH Ultra5 OLED /최종84만대/울트라5/ULT5 125H/OLED/서비스기간 2년","url":"http://item.gmarket.co.kr/item?goodsCode=3539335640","image":"http://gdimg.gmarket.co.kr/3539335640/still/120","oprice":"988,540","price":"949,000","dutyperiod":""},{"title":"LG 그램17 17ZD90SU-GX56K 가벼운 노트북 Ultra5 8GB 256GB","url":"http://item.gmarket.co.kr/item?goodsCode=3579454860","image":"http://gdimg.gmarket.co.kr/3579454860/still/120","oprice":"1,936,600","price":"1,859,140","dutyperiod":""},{"title":"갤럭시북4 NT750XGR-A71A 인텔 i7 FHD 15.6 대화면 인강용 재택근무 노트북","url":"http://item.gmarket.co.kr/item?goodsCode=3639127422","image":"http://gdimg.gmarket.co.kr/3639127422/still/120","oprice":"1,040,620","price":"999,000","dutyperiod":""},{"title":"갤럭시북4 NT750XGR-A51A 256GB 그레이 최종가61만 인텔CPU 가성비 대학생 재택근무 강의용노트북","url":"http://item.gmarket.co.kr/item?goodsCode=3647869931","image":"http://gdimg.gmarket.co.kr/3647869931/still/120","oprice":"832,290","price":"799,000","dutyperiod":""},{"title":"LG울트라PC 15UD50T-GX5JK 최종59만 총램24G+총SSD512G 하이퍼듀얼UP혜택 가성비노트북 OS미탑재","url":"http://item.gmarket.co.kr/item?goodsCode=4196091684","image":"http://gdimg.gmarket.co.kr/4196091684/still/120","oprice":"830,130","price":"796,930","dutyperiod":""},{"title":"15UD50T-GX5JK 울트라PC 업그레이드 노트북","url":"http://item.gmarket.co.kr/item?goodsCode=4220951523","image":"http://gdimg.gmarket.co.kr/4220951523/still/120","oprice":"830,140","price":"796,940","dutyperiod":""},{"title":"(삼성)(신세계강남점)갤럭시탭 S9 FE 128GB WIFI SM-X510N","url":"http://item.gmarket.co.kr/item?goodsCode=4258372469","image":"http://gdimg.gmarket.co.kr/4258372469/still/120","oprice":"560,000","price":"526,680","dutyperiod":""},{"title":"갤럭시북5 프로 NT940XHA-K51A 최종가149만 신학기선물 영상작업 사무용 업무용 대학생선물","url":"http://item.gmarket.co.kr/item?goodsCode=4261451250","image":"http://gdimg.gmarket.co.kr/4261451250/still/120","oprice":"1,873,950","price":"1,799,000","dutyperiod":""},{"title":"(삼성)(신세계강남점)갤럭시탭 S9 FE 플러스 128GB WIFI SM-X610N","url":"http://item.gmarket.co.kr/item?goodsCode=4342553060","image":"http://gdimg.gmarket.co.kr/4342553060/still/120","oprice":"690,000","price":"648,950","dutyperiod":""}]
+1248. </script>
+1249.
+1250. <!--// MenuBottomDefaultControl -->
+1251.
+1252. <!-- footer -->
+1253. <div id="footer"></div>
+1254. <script>
+1255. DesktopLayout.render([
+1256. {
+1257. name: "Footer",
+1258. params: {"type":"default"},
+1259. container: document.getElementById("footer"),
+1260. }
+1261. ]);
+1262. </script>
+1263. <!-- //footer -->
+1264.
+1265. <form name="etrust" method="POST" action="http://www.kiec.or.kr/jsp/open/eTrust_info.jsp" target="_blank">
+1266. <input name="etrust_id" type="hidden" value="2006-0410">
+1267. <input name="unique_id" type="hidden" value="470139">
+1268. </form>
+1269.
+1270. <!--Bring-back 스크립트 : 2013-06-24 -->
+1271. <!--<script type="text/javascript" src="http://cpcmall.bringback.co.kr/js/bringback.js"></script> -->
+1272.
+1273. <!--// MenuBottomDefaultControl -->
+1274.
+1275. <form name="frmLlist" method="post" action="Large.aspx" id="frmLlist">
+1276. <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE1ODUyMTk0MDhkZMwu6fX9a8RMvRIxoelcpVSUOEV2" />
+1277.
+1278. <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="4487EDE1" />
+1279. <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAgK08MnwBgKLtq6oDdy99cUgjmWtloaI2wDG9rSGT11E" />
+1280. <input type="hidden" name="sHeaderKey" id="sHeaderKey" value="CATEGORY_CPP" />
+1281. </form>
+1282. </body>
+1283. </html>

@@ -3,11 +3,13 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 from tqdm import tqdm  # ✅ 진행 상태 표시용 라이브러리
-from colorama import Fore
+from colorama import Fore, Style
+
+colorama.init(autoreset=True) 추가
 
 
 # 데이터 저장 폴더 생성
-DATA_DIR = "data"
+DATA_DIR = "../data"
 os.makedirs(DATA_DIR, exist_ok=True)
 
 # 기본 URL 및 요청 헤더 설정
@@ -31,7 +33,7 @@ def scrape_all_pages():
     """ 모든 페이지를 크롤링하여 CSV로 저장 (진행상황 tqdm 표시) """
     all_stores, page = [], 1
 
-    with tqdm(desc=Fore.GREEN + "페이지 수집 진행", colour='cyan', dynamic_ncols=True) as pbar:
+    with tqdm(desc=f"{Fore.GREEN}페이지 수집 진행{Style.RESET_ALL}", colour='cyan', dynamic_ncols=True) as pbar:
         while (stores := get_store_data(page)):
             all_stores.extend(stores)
             pbar.update(1)  # ✅ tqdm 업데이트

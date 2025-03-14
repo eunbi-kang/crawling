@@ -5,6 +5,8 @@ import json
 import pickle
 import pandas as pd
 import re
+import numpy as np
+from pymongo import MongoClient
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
@@ -13,7 +15,20 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 from webdriver_manager.chrome import ChromeDriverManager
-from pymongo import MongoClient
+from konlpy.tag import Mecab
+from sentence_transformers import SentenceTransformer
+
+# ✅ MongoDB 연결 설정
+MONGO_URI = "mongodb://eunbikang:1234@localhost:27017/admin"
+client = MongoClient(MONGO_URI)
+db = client["admin"]
+collection = db["latest_news"]
+
+# ✅ SentenceTransformer 모델 로드 (벡터화)
+model = SentenceTransformer("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
+
+# ✅ Mecab 형태소 분석기 로드
+mecab = Mecab()
 
 # ✅ 데이터 저장 폴더 설정
 DATA_DIR = "../data"
@@ -28,164 +43,138 @@ def delete_existing_files():
             os.remove(file_path)
             print(f"🗑 기존 파일 삭제: {file_path}")
 
-# ✅ 이스케이프 문자 제거 함수
+# ✅ ID 자동 증가 함수 (MongoDB에서 가장 큰 id 값 찾기)
+def get_next_id():
+    last_doc = collection.find_one(sort=[("id", -1)])  # 가장 큰 id 찾기
+    return last_doc["id"] + 1 if last_doc else 1  # 데이터 없으면 1부터 시작
+
+# ✅ 텍스트 정리 함수 (줄바꿈, 공백, 마침표 처리)
 def clean_text(text):
     if text:
-        text = text.strip()  # 앞뒤 공백 제거
-        text = re.sub(r"\s*\n\s*", " ", text)  # 줄바꿈을 공백으로 변환 (마침표 추가 X)
-        text = re.sub(r"\s*\t\s*", " ", text)  # 탭(\t)을 공백으로 변환
-        text = re.sub(r"\s+", " ", text)  # 여러 개의 공백을 하나로 변환
+        text = text.strip()
+        text = re.sub(r"\s*\n\s*", " ", text)  # 개행 → 공백 변환
+        text = re.sub(r"\s*\t\s*", " ", text)  # 탭 → 공백 변환
+        text = re.sub(r"\s+", " ", text)  # 연속된 공백 압축
 
-        # 문장이 마침표 없이 끝난 경우에만 마침표 추가
+        # 문장이 마침표 없이 끝나면 마침표 추가
         if text and not text.endswith((".", "?", "!", "”", "\"")):
             text += "."
 
-        # 따옴표(")가 중복되지 않도록 정리
         text = text.replace(" .", ".").replace(" .\"", ".\"")
 
         return text.strip()
     return None
 
+# ✅ 형태소 분석 (키워드 추출)
+def extract_keywords(text):
+    tokens = mecab.nouns(text)  # 명사만 추출
+    return " ".join(tokens)
 
-# ✅ Selenium WebDriver 설정
-chrome_options = Options()
-chrome_options.add_argument("--headless")
-chrome_options.add_argument("--no-sandbox")
-chrome_options.add_argument("--disable-gpu")
-chrome_options.add_argument("--window-size=1920x1080")
-chrome_options.add_argument("--disable-dev-shm-usage")
+# ✅ 벡터화 함수 (문장을 벡터로 변환)
+def vectorize_text(text):
+    return model.encode(text).tolist()
 
-# ✅ WebDriver 실행
-service = Service(ChromeDriverManager().install())
-browser = webdriver.Chrome(service=service, options=chrome_options)
+# ✅ 연합뉴스(부동산) 뉴스 크롤링 함수
+def crawl_news():
+    print("🔍 뉴스 크롤링 시작...")
 
-# ✅ 크롤링할 기본 URL
-base_url = "https://www.yna.co.kr/economy/real-estate/"
-page = 1
-all_news = []
+    # ✅ Selenium WebDriver 설정
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--window-size=1920x1080")
+    chrome_options.add_argument("--disable-dev-shm-usage")
 
-# ✅ 기존 파일 삭제
-delete_existing_files()
+    # ✅ WebDriver 실행
+    service = Service(ChromeDriverManager().install())
+    browser = webdriver.Chrome(service=service, options=chrome_options)
 
-while True:
-    print(f"📄 {page} 페이지 크롤링 중...")
-    url = f"{base_url}{page}?site=wholemenu_economy_depth02"
-    browser.get(url)
-    wait = WebDriverWait(browser, 15)
+    # ✅ 크롤링할 기본 URL
+    base_url = "https://www.yna.co.kr/economy/real-estate/"
+    page = 1
+    all_news = []
 
-    # ✅ JavaScript 실행하여 동적 로딩 시도
-    browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-    time.sleep(random.uniform(5, 8))
+    while page <= 2:  # ✅ 2페이지까지만 크롤링 (더 늘릴 수도 있음)
+        print(f"📄 {page} 페이지 크롤링 중...")
+        url = f"{base_url}{page}?site=wholemenu_economy_depth02"
+        browser.get(url)
+        wait = WebDriverWait(browser, 15)
 
-    # ✅ 기사 목록 로딩 대기
-    try:
-        wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="container"]/div[2]/div[2]/div[1]/section/div/ul')))
-        print("✅ 뉴스 섹션 감지 완료!")
-    except:
-        print("⚠️ 뉴스 섹션을 찾을 수 없습니다. 마지막 페이지일 가능성이 있습니다.")
-        break
+        browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        time.sleep(random.uniform(5, 8))
 
-    # ✅ 뉴스 목록 가져오기
-    news_section = browser.find_element(By.XPATH, '//*[@id="container"]/div[2]/div[2]/div[1]/section/div/ul')
-
-    # 🔥 HTML 구조 확인 (디버깅용)
-    html_content = news_section.get_attribute("outerHTML")
-    soup = BeautifulSoup(html_content, "html.parser")
-
-    # ✅ 최신 뉴스 크롤링
-    news_items = []
-    articles = soup.select("div.item-box01")
-
-    if not articles:
-        print("⚠️ 'item-box01' 내부에서 기사를 찾지 못했습니다. HTML 구조 변경 가능성 있음.")
-
-    for article in articles:
-        title_tag = article.select_one("a.tit-news span.title01")
-        link_tag = article.select_one("a.tit-news")
-        date_tag = article.select_one("span.txt-time")
-        summary_tag = article.select_one("p.lead")
-        image_tag = article.select_one("figure.img-con01 img")
-
-        title = clean_text(title_tag.get_text(strip=True)) if title_tag else None
-        link = f"https://www.yna.co.kr{link_tag['href']}" if link_tag and "href" in link_tag.attrs else None
-        date = clean_text(date_tag.get_text(strip=True)) if date_tag else None
-        summary = clean_text(summary_tag.get_text(strip=True)) if summary_tag else None
-        image_url = image_tag["src"] if image_tag and "src" in image_tag.attrs else None
-
-        news_items.append({
-            "title": title,
-            "link": link,
-            "date": date,
-            "summary": summary,
-            "image_url": image_url
-        })
-
-    # ✅ 전체 뉴스 리스트에 추가
-    all_news.extend(news_items)
-
-    # ✅ 다음 페이지 버튼이 있는지 확인
-    try:
-        next_button = browser.find_element(By.XPATH, '//a[@class="next"]')
-        next_page_url = next_button.get_attribute("href")
-
-        if not next_page_url:
-            print("🚪 다음 페이지가 없습니다. 크롤링 종료.")
+        try:
+            wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="container"]/div[2]/div[2]/div[1]/section/div/ul')))
+            print("✅ 뉴스 섹션 감지 완료!")
+        except:
+            print("⚠️ 뉴스 섹션을 찾을 수 없습니다. 마지막 페이지일 가능성이 있습니다.")
             break
 
+        news_section = browser.find_element(By.XPATH, '//*[@id="container"]/div[2]/div[2]/div[1]/section/div/ul')
+        html_content = news_section.get_attribute("outerHTML")
+        soup = BeautifulSoup(html_content, "html.parser")
+
+        articles = soup.select("div.item-box01")
+        if not articles:
+            print("⚠️ 'item-box01' 내부에서 기사를 찾지 못했습니다. HTML 구조 변경 가능성 있음.")
+
+        for article in articles:
+            title_tag = article.select_one("a.tit-news span.title01")
+            link_tag = article.select_one("a.tit-news")
+            date_tag = article.select_one("span.txt-time")
+            summary_tag = article.select_one("p.lead")
+            image_tag = article.select_one("figure.img-con01 img")
+
+            title = clean_text(title_tag.get_text(strip=True)) if title_tag else None
+            link = f"https://www.yna.co.kr{link_tag['href']}" if link_tag and "href" in link_tag.attrs else None
+            date = clean_text(date_tag.get_text(strip=True)) if date_tag else None
+            summary = clean_text(summary_tag.get_text(strip=True)) if summary_tag else None
+            image_url = image_tag["src"] if image_tag and "src" in image_tag.attrs else None
+
+            if summary:
+                keywords = extract_keywords(summary)  # ✅ 키워드 추출
+                vector = vectorize_text(keywords)  # ✅ 벡터화
+
+                news_data = {
+                    "id": get_next_id(),  # ✅ 자동 증가 ID 추가
+                    "title": title,
+                    "link": link,
+                    "date": date,
+                    "summary": summary,
+                    "image_url": image_url,
+                    "vector": vector
+                }
+
+                all_news.append(news_data)
+
         page += 1
-    except:
-        print("🚪 다음 페이지 버튼을 찾을 수 없습니다. 크롤링 종료.")
-        break
 
-# ✅ 크롤링된 데이터를 데이터프레임으로 변환
-df = pd.DataFrame(all_news)
+    browser.quit()
+    print(f"✅ 크롤링 완료! 총 {len(all_news)}개 뉴스 수집")
 
-# ✅ CSV 저장 (MongoDB 및 SQL Import-Friendly)
-csv_path = os.path.join(DATA_DIR, "latest_news.csv")
-df.to_csv(csv_path, index=False, encoding="utf-8-sig", na_rep="NULL", quotechar='"', doublequote=True)
+    return all_news
 
-# ✅ JSON 저장 (MongoDB Import-Friendly)
-json_path = os.path.join(DATA_DIR, "latest_news.json")
-with open(json_path, "w", encoding="utf-8") as f:
-    json.dump(df.to_dict(orient="records"), f, ensure_ascii=False, indent=4)
+# ✅ MongoDB에 데이터 저장
+def save_to_mongodb(news_list):
+    if not news_list:
+        print("⚠️ 저장할 뉴스가 없습니다!")
+        return
 
-# ✅ Pickle 저장 (Python 객체 그대로 저장, 성능 최적화)
-pkl_path = os.path.join(DATA_DIR, "latest_news.pkl")
-with open(pkl_path, "wb") as f:
-    pickle.dump(df, f, protocol=pickle.HIGHEST_PROTOCOL)
+    # ✅ 기존 데이터 삭제 (옵션)
+    collection.delete_many({})
+    print("🗑 기존 데이터 삭제 완료!")
 
-# ✅ MongoDB 저장
-mongo_client = MongoClient("mongodb://localhost:27017/")
-mongo_db = mongo_client["news_db"]
-mongo_collection = mongo_db["latest_news"]
+    # ✅ 새 데이터 저장
+    collection.insert_many(news_list)
+    print(f"✅ {len(news_list)}개 뉴스 저장 완료!")
 
-# ✅ 기존 데이터 삭제 (권한 문제 방지)
-try:
-    mongo_collection.delete_many({})
-    print("🗑 MongoDB 기존 데이터 삭제 완료.")
-except Exception as e:
-    print(f"⚠️ MongoDB 데이터 삭제 오류 발생: {e}")
+# ✅ 실행 (크롤링 → 벡터화 → MongoDB 저장)
+if __name__ == "__main__":
+    delete_existing_files()
+    news_data = crawl_news()
+    save_to_mongodb(news_data)
 
-# ✅ 새 데이터 삽입
-try:
-    mongo_collection.insert_many(df.to_dict(orient="records"))
-    print("✅ MongoDB 데이터 저장 완료.")
-except Exception as e:
-    print(f"⚠️ MongoDB 데이터 삽입 오류 발생: {e}")
-
-print(f"✅ 총 {len(df)}개의 뉴스 기사가 수집되었습니다.")
-print(f"📂 CSV 파일 저장 완료: {csv_path}")
-print(f"📂 JSON 파일 저장 완료: {json_path}")
-print(f"📂 Pickle 파일 저장 완료: {pkl_path}")
-print("📂 MongoDB 저장 완료!")
-
-# ✅ 브라우저 종료
-browser.quit()
-print("🚪 브라우저 종료 완료!")
-
-# ✅ 크롤링된 데이터 확인
-if not df.empty:
-    print("🔍 크롤링된 데이터 미리보기:")
-    print(df.head())
-else:
-    print("⚠️ 크롤링된 데이터가 없습니다. 확인이 필요합니다.")
+    # ✅ MongoDB 데이터 확인
+    doc_count = collection.count_documents({})
+    print(f"🔍 MongoDB 저장된 뉴스 개수: {doc_count}")

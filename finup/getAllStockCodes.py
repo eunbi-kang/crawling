@@ -19,7 +19,7 @@ def get_all_stock_codes():
     df = df[['회사명', '종목코드']]
     df['종목코드'] = df['종목코드'].apply(lambda x: str(x).zfill(6))
 
-    # 💡 종목코드로 시장구분 유추
+    # 종목코드로 시장구분 유추
     def infer_market(code):
         code_int = int(code)
         if code_int >= 100000:
